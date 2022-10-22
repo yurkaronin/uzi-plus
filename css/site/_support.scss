@@ -1,0 +1,45 @@
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.swiper-button {
+  border: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: all 0.3s;
+  position: initial !important;
+}
+
+.swiper-button-disabled {
+  opacity: 0.2 !important;
+  border: 1px solid;
+  border-color: var(--black);
+}
+
+.swiper-button:after,
+.swiper-button:before {
+  display: none !important;
+}
