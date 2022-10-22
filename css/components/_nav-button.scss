@@ -1,0 +1,64 @@
+.nav-button {
+  box-shadow: none;
+  transform: none;
+  border: none;
+  height: var(--elem-sz);
+  width: var(--elem-sz);
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent1);
+
+  display: none;
+
+  span {
+    width: 20px;
+    height: 2px;
+    background-color: var(--black);
+    display: block;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  span::before,
+  span::after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: var(--black);
+    display: inherit;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: initial;
+    transition: initial;
+  }
+  span:before {
+    margin-top: -6px;
+  }
+  span::after {
+    margin-top: 6px;
+  }
+  &.open span {
+    background-color: transparent;
+    border-radius: 0;
+  }
+  &.open span:before {
+    margin-top: 0;
+    transform: rotate(45deg);
+  }
+  &.open span:after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+  }
+  &:hover,
+  &.open {
+    // background-color: var(--col1);
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}

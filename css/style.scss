@@ -3,3 +3,43 @@
 @import "site/site";
 @import "components/components";
 @import "sections/sections";
+
+.mob-menu-open {
+  .navigation {
+    top: 0;
+  }
+}
+
+
+@media (max-width: 1350px) {
+  .hide-1350 {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .hide-1024 {
+    display: none;
+  }
+}
+
+@media (max-width: 930px) {
+  .hide-930 {
+    display: none;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .hide-900 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-768 {
+    display: none;
+  }
+
+}
