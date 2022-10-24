@@ -213,6 +213,7 @@ input[type=radio].visually-hidden {
 
 .modal__btn:focus,
 .modal__btn:hover {
+  -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -224,28 +225,12 @@ input[type=radio].visually-hidden {
 /**************************\
   Demo Animation Style
 \**************************/
-@-webkit-keyframes mmfadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes mmfadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes mmfadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
 @keyframes mmfadeOut {
@@ -256,28 +241,12 @@ input[type=radio].visually-hidden {
     opacity: 0;
   }
 }
-@-webkit-keyframes mmslideIn {
-  from {
-    transform: translateY(15%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 @keyframes mmslideIn {
   from {
     transform: translateY(15%);
   }
   to {
     transform: translateY(0);
-  }
-}
-@-webkit-keyframes mmslideOut {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-10%);
   }
 }
 @keyframes mmslideOut {
@@ -297,23 +266,19 @@ input[type=radio].visually-hidden {
 }
 
 .micromodal-slide[aria-hidden=false] .modal__overlay {
-  -webkit-animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
-          animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden=false] .modal__container {
-  -webkit-animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
-          animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden=true] .modal__overlay {
-  -webkit-animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
-          animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden=true] .modal__container {
-  -webkit-animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
-          animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide .modal__container,
@@ -364,8 +329,6 @@ input[type=radio].visually-hidden {
   box-shadow: none;
   position: relative;
   border-radius: 70px;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
 }
 .button--light {
@@ -541,8 +504,7 @@ input[type=radio].visually-hidden {
   display: flex;
 }
 .header__logo img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .header__buttons {
   max-width: 390px;
@@ -552,8 +514,6 @@ input[type=radio].visually-hidden {
   justify-content: flex-end;
 }
 .header__buttons .button {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
 }
 .header__search {
@@ -702,4 +662,4 @@ input[type=radio].visually-hidden {
   .hide-768 {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
