@@ -28,7 +28,6 @@
     }
 
     &:nth-child(2) {
-      margin: 0 auto;
       text-align: center;
       margin: 0 auto;
     }
@@ -70,15 +69,11 @@
 
     .button {
       max-width: max-content;
-
-
     }
   }
 
   &__search {
-    background-color: transparent;
     border: none;
-    padding: 0;
     width: 43px;
     height: 43px;
     display: flex;
@@ -89,7 +84,6 @@
   }
 
   @media (max-width: 1024px) {
-
     &__logo {
       max-width: 140px;
       display: flex;
@@ -125,21 +119,15 @@
     }
   }
 
+  @media (max-width: 768px) {
+    &__top {
+      display: none;
+    }
+  }
+
   @media (max-width: 650px) {
     &__buttons {
       display: none;
     }
   }
-
-  @media (max-width: 500px) {
-    &__top {
-      display: none;
-    }
-    &__top-item {
-      font-size: 14px;
-    }
-  }
-
-
-
 }

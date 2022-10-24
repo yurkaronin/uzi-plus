@@ -7,6 +7,21 @@ document.addEventListener('DOMContentLoaded', () => {
     menuButton.classList.toggle('open');
   });
 
+  let navigationLink = document.querySelectorAll('.navigation__link');
+  for (let item of navigationLink) {
+
+    if (window.innerWidth <= 768) {
+      item.removeAttribute('href');
+
+      item.onclick = function (e) {
+        e.preventDefault();
+        item.parentNode.classList.toggle('active');
+      };
+    }
+
+
+  }
+
   const swiperIMG = new Swiper('.slider__images', {
     // параметры слайдера
     loop: false,

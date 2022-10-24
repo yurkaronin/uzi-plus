@@ -2,8 +2,10 @@
   background-color: var(--brand1);
   color: var(--white);
   transition-duration: 0.3s;
+  position: relative;
+  z-index: 88;
 
-  ul {
+  &__list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -11,10 +13,13 @@
     justify-content: space-between;
     gap: 12px;
     flex-wrap: wrap;
+
+    li {
+      position: relative;
+    }
   }
 
-  a {
-    display: block;
+  &__link {
     padding: 20px 0;
     font-weight: 500;
     font-size: 18px;
@@ -24,18 +29,149 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     text-align: center;
+    transition: all 0.3s;
+    position: relative;
+    gap: 12px;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      background-color: #41e1bb;
+      transition: all 0.3s;
+      z-index: 2;
+    }
+
+    svg {
+      display: block;
+      width: 14px;
+      height: 7px;
+      transform: rotate(0);
+      transition: all 0.3s;
+
+      path {
+        transition: all 0.3s;
+        stroke: #ffffff;
+      }
+    }
+  }
+
+  &__sublist {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 650px;
+    height: 525px;
+    padding: 45px 60px 50px;
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0px 6px 20px rgb(101 104 108 / 10%);
+    border-radius: 0px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 42px;
+    flex-wrap: wrap;
+    transition: all 0.3s;
+
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1;
+      letter-spacing: 0.01em;
+      color: #000000;
+      text-transform: initial;
+      padding: 0;
+      position: relative;
+      transition: all 0.3s;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: #41e1bb;
+        transition: all 0.3s;
+        z-index: 2;
+      }
+
+      &:hover,
+      &:focus {
+        color: #41e1bb;
+
+        &:before {
+          content: "";
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__mobile {
+    display: none;
+  }
+
+  @media (min-width: 769px) {
+    li {
+      &:hover,
+      &:focus {
+        .navigation__link {
+          color: #41e1bb;
+
+          svg {
+            transform: rotate(180deg);
+            path {
+              stroke: #41e1bb;
+            }
+          }
+
+          &:before {
+            content: "";
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__sublist {
+      opacity: 0;
+      pointer-events: none;
+    }
+    li {
+      &:hover > .navigation__sublist,
+      &:focus > .navigation__sublist {
+        opacity: 1;
+        pointer-events: initial;
+      }
+    }
   }
 
   @media (max-width: 1024px) {
-    a {
+    &__link {
       font-size: 14px;
       padding: 14px 0;
+      gap: 8px;
+    }
+    &__sublist {
+      width: 525px;
+      height: 465px;
+      padding: 16px 32px 42px;
+      gap: 12px 26px;
+    }
+    &__sublist a {
+      font-size: 16px;
     }
   }
 
   @media (max-width: 768px) {
-    position: relative;
-    top: -700px;
+    top: -300vh;
     .wrapper {
       padding: 0;
     }
@@ -50,6 +186,7 @@
       max-width: 100%;
       border-bottom: 1px solid;
       border-color: var(--brand2);
+      position: relative;
 
       &:last-child {
         border-bottom: none;
@@ -59,6 +196,64 @@
       font-size: 18px;
       padding: 20px 10px;
       justify-content: center;
+      cursor: pointer;
+
+      &:before {
+        display: none;
+       }
+    }
+
+    .navigation__sublist {
+      background: var(--brand2);
+      position: initial;
+      margin: 0;
+      padding: 0;
+      width: initial;
+      height: 0;
+      overflow: hidden;
+      border-radius: 0;
+      transition: all 0.3s;
+
+      li {
+        border-color: var(--brand3);
+      }
+    }
+    .navigation__sublist a {
+      font-size: 14px;
+      padding: 16px 10px;
+      justify-content: center;
+      color: #ffffff;
+      display: flex;
+      text-transform: uppercase;
+
+      &:before {
+       display: none;
+      }
+    }
+    &__mobile {
+      z-index: 99;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 0px 32px rgb(0 0 0 / 10%);
+
+      .button {
+        width: 50%;
+        max-width: initial;
+        padding: 13px 10px;
+        border-radius: 8px 0 0 0;
+
+        &:last-child {
+          background-color: #ffffff;
+          border-radius: 0 8px 0 0;
+        }
+      }
+
     }
   }
+
 }

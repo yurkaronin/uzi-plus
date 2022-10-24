@@ -10,6 +10,27 @@
   }
 }
 
+.active {
+  .navigation__sublist {
+    height: initial;
+  }
+  .navigation__link {
+    color: #41e1bb;
+
+    svg {
+      transform: rotate(180deg);
+      path {
+        stroke: #41e1bb;
+      }
+    }
+
+    &:before {
+      content: "";
+      width: 100%;
+    }
+  }
+}
+
 
 @media (max-width: 1350px) {
   .hide-1350 {
