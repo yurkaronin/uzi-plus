@@ -381,11 +381,15 @@ input[type=radio].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.social-list a img {
-  display: block;
   width: 35px;
   height: 35px;
+  border-radius: 50%;
+  background-color: var(--brand4);
+  position: relative;
+}
+.social-list a svg {
+  pointer-events: none;
+  position: absolute;
 }
 .social-list a:hover, .social-list a:active {
   opacity: 0.5;
