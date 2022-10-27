@@ -802,10 +802,11 @@ input[type=radio].visually-hidden {
   padding-top: 52px;
   padding-bottom: 120px;
   background-color: var(--brand6);
-  min-height: 685px;
+  height: 685px;
 }
 .slider-hero__details {
   display: flex;
+  align-items: center;
   gap: 32px;
   position: relative;
   z-index: 20;
@@ -886,7 +887,6 @@ input[type=radio].visually-hidden {
 .slider-hero__list {
   max-width: 235px;
   width: 100%;
-  padding-top: 62px;
 }
 .slider-hero__list ul {
   margin: 0;
@@ -971,6 +971,9 @@ input[type=radio].visually-hidden {
 .vedenie-beremennosti .slider-hero__details {
   max-width: 642px;
 }
+.vedenie-beremennosti .slider-hero__title {
+  margin-bottom: 20px;
+}
 .vedenie-beremennosti .slider-hero__image {
   top: 0;
   bottom: 0;
@@ -1000,13 +1003,13 @@ input[type=radio].visually-hidden {
   font-size: 50px;
 }
 .videoezofagogastroduodenoskopiya .slider-hero__details {
-  max-width: 751px;
+  max-width: 750px;
 }
 .videoezofagogastroduodenoskopiya .slider-hero__group {
-  max-width: 415px;
+  max-width: 450px;
 }
 .videoezofagogastroduodenoskopiya .slider-hero__list {
-  max-width: 320px;
+  max-width: 300px;
 }
 .videoezofagogastroduodenoskopiya .slider-hero__image {
   top: 0;
@@ -1015,8 +1018,42 @@ input[type=radio].visually-hidden {
 .videoezofagogastroduodenoskopiya .slider-hero__image img {
   height: 100%;
 }
-.videoezofagogastroduodenoskopiya__subtitle {
+.videoezofagogastroduodenoskopiya .slider-hero__subtitle {
   font-size: 16px;
+  max-width: 100%;
+}
+
+.benefits {
+  padding-top: 75px;
+  padding-bottom: 105px;
+}
+.benefits__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+.benefits__icon {
+  background: #ffffff;
+  box-shadow: 0px 6px 20px rgba(101, 104, 108, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  position: relative;
+}
+.benefits__icon svg {
+  position: absolute;
+}
+.benefits__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: #000000;
 }
 
 .mob-menu-open .navigation {
