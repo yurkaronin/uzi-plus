@@ -1,0 +1,54 @@
+.icon {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  margin-right: 12px;
+  background-size: contain;
+
+  &--achievement {
+    background-image: url(../img/icons/achievement.svg);
+  }
+
+  &--stopwatch {
+    background-image: url(../img/icons/stopwatch.svg);
+  }
+
+  &--technology {
+    background-image: url(../img/icons/technology.svg);
+  }
+
+  &--microbe {
+    background-image: url(../img/icons/microbe.svg);
+  }
+
+  &--tubes {
+    background-image: url(../img/icons/tubes.svg);
+  }
+
+  &--tubes-2 {
+    background-image: url(../img/icons/tubes-2.svg);
+  }
+
+  &--uzi {
+    background-image: url(../img/icons/uzi.svg);
+  }
+
+  &--heart {
+    background-image: url(../img/icons/heart.svg);
+  }
+
+  &--stomach {
+    background-image: url(../img/icons/stomach.svg);
+  }
+  &--microscope {
+    background-image: url(../img/icons/microscope.svg);
+  }
+
+  @media (min-width: 1440px) {
+    width: 40px;
+    height: 40px;
+  }
+}

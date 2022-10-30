@@ -3,71 +3,93 @@
 }
 
 .slider-hero {
-  &__item {
-    padding-top: 52px;
-    padding-bottom: 120px;
-    background-color: var(--brand6);
-    height: 685px;
+  .decorate {
+    display: none;
+  }
 
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item {
+    background-color: var(--brand6);
+    min-height: 650px;
   }
 
   &__details {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+    padding: 65px 0 80px;
     position: relative;
-    z-index: 20;
-    max-width: 670px;
+    z-index: 2;
   }
 
-  &__group {
-    max-width: 455px;
-    width: 100%;
+  &__image {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    bottom: 0;
+
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__image {
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #828282;
+    margin-bottom: 16px;
+    margin-right: 10%;
+
+    strong {
+      text-decoration: underline;
+      font-weight: 700;
+    }
   }
 
   &__title {
     margin: 0;
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1.1;
     letter-spacing: 0.01em;
     color: #000000;
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 
-  .decorate-1,
-  .decorate-2 {
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 9px;
-  }
-  .decorate-1 {
-    width: 134px;
-    height: 29px;
-    background-image: url(../img/icons/diagram-1.svg);
-  }
-  .decorate-2 {
-    width: 87px;
-    height: 32px;
-    background-image: url(../img/icons/diagram-2.svg);
-  }
   &__price {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 1.6;
+    line-height: 1;
     letter-spacing: 0.01em;
     color: #000000;
-    padding: 6px 18px 11px 25px;
+    padding: 8px 18px;
+    padding-left: 25px;
     background: #ffffff;
     border-radius: 30px 70px 70px 0px;
-    margin: 0 auto;
+    margin: 0;
     max-width: max-content;
+    display: block;
+    margin-bottom: 12px;
 
     del {
       font-weight: 500;
@@ -77,16 +99,6 @@
       text-decoration-line: line-through;
       color: #41e1bb;
     }
-  }
-  &__subtitle {
-    margin: 0;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.4;
-    letter-spacing: 0.01em;
-    color: #000000;
-    max-width: 380px;
-    margin-bottom: 30px;
   }
 
   .button {
@@ -98,60 +110,53 @@
   }
 
   &__list {
-    max-width: 235px;
+    max-width: 100%;
     width: 100%;
-    // padding-top: 62px;
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 32px;
 
     li {
-      background: #41e1bb;
-      border-radius: 30px 70px 70px 0px;
-      margin-bottom: 30px;
-      padding: 16px 42px;
-      padding-left: 48px;
       font-weight: 400;
       font-size: 18px;
       line-height: 1.3;
       letter-spacing: 0.01em;
-      color: #006f68;
-      position: relative;
       display: flex;
       align-items: center;
+      margin-bottom: 8px;
+      position: relative;
 
-      svg {
-        position: absolute;
-        left: -12px;
 
-        path {
-          fill: var(--brand2);
+      .icon {
+        flex-shrink: 0;
+      }
+
+      span {
+        b {
+          font-weight: 700;
         }
       }
 
-      b {
-        font-weight: 700;
+
+    }
+
+    &--long {
+      grid-template-columns: 1fr;
+
+      li {
+        font-size: 18px;
       }
 
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
+
+
   }
 
-  &__image {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    img {
-      display: block;
-    }
-  }
   &__pagination {
-    bottom: 65px;
+    bottom: 30px;
     position: absolute;
     left: 0;
     width: 100%;
@@ -161,6 +166,10 @@
       position: initial;
       margin-right: auto;
       max-width: max-content;
+
+      .wrapper {
+        display: block;
+      }
     }
   }
 
@@ -174,88 +183,176 @@
       background-color: #000000;
     }
   }
+
 }
 
-.analizy-na-koronavirus {
-  .slider-hero__details {
-    max-width: 785px;
-  }
-  .slider-hero__image {
-    top: 0;
-    bottom: 0;
 
-    img {
-      height: 100%;
+.slider-hero {
+  @media (min-width: 1441px) {
+    &__title {
+      font-size: 60px;
+
+      &.small {
+        font-size: 53px;
+      }
+    }
+
+    &__description {
+      font-weight: 500;
+      font-size: 22px;
+      color: #000000;
+      margin-bottom: 16px;
+
+      &.small {
+        font-size: 16px;
+      }
+    }
+
+    .decorate {
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 9px;
+      background-color: transparent;
+      flex-shrink: 0;
+      padding: initial;
+      max-width: initial;
+    }
+
+    .decorate--one {
+      width: 134px;
+      height: 29px;
+      background-image: url(../img/icons/diagram-1.svg);
+    }
+
+    .decorate--two {
+      width: 87px;
+      height: 32px;
+      background-image: url(../img/icons/diagram-2.svg);
+    }
+
+    .wrapper {
+      grid-template-columns: 455px 1fr;
+    }
+
+    &__list {
+      position: absolute;
+      left: 100%;
+      top: 130px;
+      max-width: 290px;
+
+
+      li {
+        background: #41E1BB;
+        border-radius: 30px 70px 70px 0px;
+        padding: 18px 40px;
+        color: #006F68 !important;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .icon {
+          position: absolute;
+          left: -12px;
+        }
+      }
+
+      &.long {
+        max-width: 390px !important;
+
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 1440px) {
+    &__description {
+      font-size: 16px;
+    }
+
+    .wrapper {
+      grid-template-columns: 690px 1fr;
+    }
+
+    .button {
+      height: 55px;
+      padding: 20px 30px;
+    }
+
+    &__item {
+      min-height: initial;
+      height: 610px;
+    }
+
+    &__title.small {
+      font-size: 46px;
+    }
+
+
+  }
+
+  @media (max-width: 1024px) {
+    .wrapper {
+      grid-template-columns: 540px 1fr;
+    }
+
+    &__item {
+      height: initial;
+    }
+
+    &__image {
+      height: 58%;
+    }
+
+    &__details {
+      padding: 35px 0;
     }
   }
 
-  .slider-hero__group {
-    max-width: 385px;
-  }
-  .slider-hero__list {
-    max-width: 350px;
-  }
-}
-
-.vedenie-beremennosti {
-  .slider-hero__details {
-    max-width: 642px;
-  }
-  .slider-hero__title {
-    margin-bottom: 20px;
-  }
-
-  .slider-hero__image {
-    top: 0;
-    bottom: 0;
-
-    img {
-      height: 100%;
+  @media (max-width: 768px) {
+    &__item {
+      padding-top: 32px;
     }
-  }
-  .slider-hero__group {
-    max-width: 100%;
-  }
 
-  .slider-hero__list {
-    max-width: initial;
-    padding: 0;
-    margin-bottom: 32px;
-    ul {
+    &__image {
+      position: initial;
+      width: 100%;
+      height: initial;
+      order: -1;
+    }
+
+    .wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    &__details {
+      padding-bottom: 65px;
       display: flex;
-      gap: 20px 42px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      padding-top: 0;
     }
-    li {
-      width: calc(50% - 21px);
-      margin: 0;
-    }
-  }
-}
 
-.videoezofagogastroduodenoskopiya {
-  .slider-hero__title {
-    font-size: 50px;
-  }
-  .slider-hero__details {
-    max-width: 750px;
-  }
-  .slider-hero__group {
-    max-width: 450px;
-  }
-  .slider-hero__list {
-    max-width: 300px;
-  }
-  .slider-hero__image {
-    top: 0;
-    bottom: 0;
+    &__list {
+      order: -1;
+      background-color: #fff;
+      padding: 12px 20px;
+      margin-top: -1px;
+    }
 
-    img {
-      height: 100%;
+    &__image {
+      img {
+        height: initial;
+        -o-object-fit: cover;
+        object-fit: initial;
+      }
+    }
+
+    &__title {
+      font-size: 36px;
     }
   }
-  .slider-hero__subtitle {
-    font-size: 16px;
-    max-width: 100%;
-  }
+
 }
