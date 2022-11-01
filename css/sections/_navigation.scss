@@ -171,7 +171,14 @@
   }
 
   @media (max-width: 768px) {
-    top: -300vh;
+    left: -100%;
+    position: absolute;
+    top: 63px;
+    width: 100%;
+    height: calc(100vh - 63px);
+    overflow: auto;
+    padding-bottom: 43px;
+
     .wrapper {
       padding: 0;
     }

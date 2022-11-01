@@ -12,6 +12,7 @@
     margin-bottom: 23px;
     flex-wrap: wrap;
     justify-content: center;
+    transition: all 0.3s;
   }
 
   &__top-item {
@@ -87,11 +88,13 @@
     &__top {
       display: none;
     }
+
     &__logo {
       max-width: 140px;
       display: flex;
       align-items: center;
     }
+
     &__buttons {
       gap: 12px;
       max-width: 340px;
