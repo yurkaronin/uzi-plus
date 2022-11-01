@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.onscroll = function() {
     // прилипающая шапка сайта при скроле страницы
-    if(window.pageYOffset > 150) {
+    if(window.pageYOffset > 650) {
       document.body.classList.add('menu-fixed');
     } else {
       document.body.classList.remove('menu-fixed');
