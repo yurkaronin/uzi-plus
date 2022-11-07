@@ -249,14 +249,12 @@
 
 
   @media (max-width: 1440px) {
-    min-height: initial;
-
     .wrapper {
       grid-template-columns: 1fr;
     }
 
     &__item {
-      min-height: initial;
+      min-height: 720px;
     }
 
     &__details {
@@ -265,15 +263,19 @@
     }
 
     &__price {
-      margin: 0 auto 0 0;
+      margin: 0 auto 0 10%;
     }
 
     &__title {
       max-width: 455px;
+      font-size: 55px;
     }
 
     &__description {
       max-width: 455px;
+      height: 99px;
+      min-height: initial;
+      overflow: scroll;
     }
 
     .button {
@@ -291,6 +293,8 @@
 
       li {
         margin: 0;
+        padding: 18px 20px;
+        padding-left: 40px;
       }
     }
 
@@ -298,6 +302,14 @@
       height: 626px;
       right: -120px;
       bottom: 120px;
+    }
+
+    &__item--1 &__title {
+      font-size: 50px;
+    }
+
+    &__item--4 &__title {
+      font-size: 50px;
     }
 
     &__item--2 &__image {
@@ -325,6 +337,7 @@
     &__item--4 &__description {
       max-width: 590px;
     }
+
   }
 
   @media (max-width: 1024px) {
@@ -347,6 +360,71 @@
       right: -41px;
       bottom: 170px;
     }
+  }
+
+  @media (max-width: 768px) {
+    &__item {
+      min-height: initial;
+      height: 770px;
+    }
+
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding: 5% 10px 0;
+    }
+
+    &__details {
+      display: block;
+      padding: 0;
+    }
+
+    &__list {
+      position: absolute;
+      width: calc(100% - 32px);
+      grid-template-columns: 1fr;
+      gap: 24px;
+      order: initial;
+      left: calc(100% + 24px);
+      top: 0;
+    }
+
+    &__image {
+      position: absolute;
+      grid-column: span 2;
+      width: 100% !important;
+      height: 458px !important;
+      top: initial !important;
+      left: initial !important;
+      right: initial !important;
+      bottom: 0 !important;
+    }
+
+    .button {
+      margin-bottom: 0;
+    }
+
+    &__description {
+      max-width: 100%;
+      margin: 0;
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      font-size: 45px !important;
+    }
+
+    &__description {
+      font-size: 18px !important;
+    }
+
+    .button {
+      height: initial;
+      font-size: 16px;
+    }
+
+
+
   }
 
 }

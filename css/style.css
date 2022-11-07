@@ -1166,27 +1166,28 @@ input[type=radio].visually-hidden {
   grid-template-columns: 455px 1fr;
 }
 @media (max-width: 1440px) {
-  .slider-hero {
-    min-height: initial;
-  }
   .slider-hero .wrapper {
     grid-template-columns: 1fr;
   }
   .slider-hero__item {
-    min-height: initial;
+    min-height: 720px;
   }
   .slider-hero__details {
     display: flex;
     flex-direction: column;
   }
   .slider-hero__price {
-    margin: 0 auto 0 0;
+    margin: 0 auto 0 10%;
   }
   .slider-hero__title {
     max-width: 455px;
+    font-size: 55px;
   }
   .slider-hero__description {
     max-width: 455px;
+    height: 99px;
+    min-height: initial;
+    overflow: scroll;
   }
   .slider-hero .button {
     margin-bottom: 40px;
@@ -1202,11 +1203,19 @@ input[type=radio].visually-hidden {
   }
   .slider-hero__list li {
     margin: 0;
+    padding: 18px 20px;
+    padding-left: 40px;
   }
   .slider-hero__image {
     height: 626px;
     right: -120px;
     bottom: 120px;
+  }
+  .slider-hero__item--1 .slider-hero__title {
+    font-size: 50px;
+  }
+  .slider-hero__item--4 .slider-hero__title {
+    font-size: 50px;
   }
   .slider-hero__item--2 .slider-hero__image {
     right: 0;
@@ -1246,6 +1255,58 @@ input[type=radio].visually-hidden {
   .slider-hero__item--4 .slider-hero__image {
     right: -41px;
     bottom: 170px;
+  }
+}
+@media (max-width: 768px) {
+  .slider-hero__item {
+    min-height: initial;
+    height: 770px;
+  }
+  .slider-hero .wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 5% 10px 0;
+  }
+  .slider-hero__details {
+    display: block;
+    padding: 0;
+  }
+  .slider-hero__list {
+    position: absolute;
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+    gap: 24px;
+    order: initial;
+    left: calc(100% + 24px);
+    top: 0;
+  }
+  .slider-hero__image {
+    position: absolute;
+    grid-column: span 2;
+    width: 100% !important;
+    height: 458px !important;
+    top: initial !important;
+    left: initial !important;
+    right: initial !important;
+    bottom: 0 !important;
+  }
+  .slider-hero .button {
+    margin-bottom: 0;
+  }
+  .slider-hero__description {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .slider-hero__title {
+    font-size: 45px !important;
+  }
+  .slider-hero__description {
+    font-size: 18px !important;
+  }
+  .slider-hero .button {
+    height: initial;
+    font-size: 16px;
   }
 }
 
