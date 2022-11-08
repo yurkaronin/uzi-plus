@@ -1564,7 +1564,7 @@ input[type=radio].visually-hidden {
 }
 .promo .wrapper {
   display: grid;
-  grid-template-columns: 7fr 5fr;
+  grid-template-columns: 1fr 530px;
   gap: 32px;
   align-items: center;
 }
@@ -1575,7 +1575,7 @@ input[type=radio].visually-hidden {
   line-height: 1.1;
   letter-spacing: 0.01em;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 0.7em;
 }
 .promo .title--clear {
   margin: 0;
@@ -1602,13 +1602,94 @@ input[type=radio].visually-hidden {
   line-height: 1.1;
   letter-spacing: 0.01em;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 0.57em;
   color: #FFFFFF;
 }
 .promo .button {
   height: 60px;
   width: 100%;
   max-width: 313px;
+}
+@media (max-width: 1440px) {
+  .promo .wrapper {
+    grid-template-columns: 1fr 450px;
+  }
+  .promo .title {
+    font-size: 32px;
+  }
+  .promo .subtitle {
+    font-size: 20px;
+  }
+  .promo a[href^="tel:"] {
+    font-size: 30px;
+  }
+  .promo__call {
+    padding: 40px 65px 45px;
+  }
+}
+@media (max-width: 1024px) {
+  .promo .wrapper {
+    grid-template-columns: 1fr 360px;
+  }
+  .promo a[href^="tel:"] {
+    font-size: 26px;
+  }
+  .promo .button {
+    height: 50px;
+    width: 100%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding: 25px 35px;
+  }
+  .promo__call {
+    padding: 32px 45px;
+  }
+  .promo .button--icon {
+    gap: 8px;
+  }
+  .promo .button--icon svg {
+    width: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .promo .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .promo__call {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .promo a[href^="tel:"] {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 650px) {
+  .promo__call {
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 425px) {
+  .promo .title {
+    font-size: 26px;
+  }
+  .promo .subtitle {
+    font-size: 18px;
+  }
+  .promo a[href^="tel:"] {
+    font-size: 22px;
+  }
+  .promo__call {
+    padding: 26px 35px;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @-webkit-keyframes show-header {

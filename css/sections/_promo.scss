@@ -5,7 +5,7 @@
 
   .wrapper {
     display: grid;
-    grid-template-columns: 7fr 5fr;
+    grid-template-columns: 1fr 530px;
     gap: 32px;
     align-items: center;
   }
@@ -17,7 +17,7 @@
     line-height: 1.1;
     letter-spacing: 0.01em;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 0.7em;
 
     &--clear {
       margin: 0;
@@ -38,6 +38,7 @@
     background: #41E1BB;
     border-radius: 60px 200px 200px 0px;
     padding: 54px 82px 57px;
+
     &--mod {
       padding: 34px 74px 37px 82px;
     }
@@ -49,7 +50,7 @@
     line-height: 1.1;
     letter-spacing: 0.01em;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0.57em;
 
     color: #FFFFFF;
   }
@@ -59,4 +60,104 @@
     width: 100%;
     max-width: 313px;
   }
+
+  @media (max-width: 1440px) {
+    .wrapper {
+      grid-template-columns: 1fr 450px;
+    }
+
+    .title {
+      font-size: 32px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+    }
+
+    a[href^="tel:"] {
+      font-size: 30px;
+    }
+
+    &__call {
+      padding: 40px 65px 45px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .wrapper {
+      grid-template-columns: 1fr 360px;
+    }
+
+    a[href^="tel:"] {
+      font-size: 26px;
+    }
+
+    .button {
+      height: 50px;
+      width: 100%;
+      max-width: max-content;
+      padding: 25px 35px
+    }
+
+    &__call {
+      padding: 32px 45px;
+    }
+
+    .button--icon {
+      gap: 8px;
+
+      svg {
+        width: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    &__call {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      max-width: max-content;
+
+    }
+
+    a[href^="tel:"] {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 650px) {
+    &__call {
+      flex-direction: column;
+      gap: 12px;
+      margin: 0 auto;
+    }
+
+  }
+
+  @media (max-width: 425px) {
+    .title {
+      font-size: 26px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+    }
+
+    a[href^="tel:"] {
+      font-size: 22px;
+    }
+
+    &__call {
+      padding: 26px 35px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+  }
+
 }
