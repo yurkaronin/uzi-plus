@@ -115,12 +115,11 @@
     }
   }
 
-  &__mobile {
-    display: none;
-  }
+
 
   @media (min-width: 769px) {
     li {
+
       &:hover,
       &:focus {
         .navigation__link {
@@ -128,6 +127,7 @@
 
           svg {
             transform: rotate(180deg);
+
             path {
               stroke: #41e1bb;
             }
@@ -140,13 +140,16 @@
         }
       }
     }
+
     &__sublist {
       opacity: 0;
       pointer-events: none;
     }
+
     li {
-      &:hover > .navigation__sublist,
-      &:focus > .navigation__sublist {
+
+      &:hover>.navigation__sublist,
+      &:focus>.navigation__sublist {
         opacity: 1;
         pointer-events: initial;
       }
@@ -159,12 +162,14 @@
       padding: 14px 0;
       gap: 8px;
     }
+
     &__sublist {
       width: 525px;
       height: 465px;
       padding: 16px 32px 42px;
       gap: 12px 26px;
     }
+
     &__sublist a {
       font-size: 16px;
     }
@@ -182,6 +187,7 @@
     .wrapper {
       padding: 0;
     }
+
     ul {
       flex-direction: column;
       align-items: center;
@@ -199,6 +205,7 @@
         border-bottom: none;
       }
     }
+
     a {
       font-size: 18px;
       padding: 20px 10px;
@@ -207,7 +214,7 @@
 
       &:before {
         display: none;
-       }
+      }
     }
 
     .navigation__sublist {
@@ -225,6 +232,7 @@
         border-color: var(--brand3);
       }
     }
+
     .navigation__sublist a {
       font-size: 14px;
       padding: 16px 10px;
@@ -234,32 +242,8 @@
       text-transform: uppercase;
 
       &:before {
-       display: none;
+        display: none;
       }
-    }
-    &__mobile {
-      z-index: 99;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0px 0px 32px rgb(0 0 0 / 10%);
-
-      .button {
-        width: 50%;
-        max-width: initial;
-        padding: 13px 10px;
-        border-radius: 8px 0 0 0;
-
-        &:last-child {
-          background-color: #ffffff;
-          border-radius: 0 8px 0 0;
-        }
-      }
-
     }
   }
 

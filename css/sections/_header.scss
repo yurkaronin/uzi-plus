@@ -129,10 +129,23 @@
     &__top {
       display: none;
     }
+
+    &__buttons {
+      display: none;
+    }
+    .social-list {
+      margin: 0 auto;
+    }
   }
 
   @media (max-width: 650px) {
     &__buttons {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .social-list {
       display: none;
     }
   }
