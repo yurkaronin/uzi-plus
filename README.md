@@ -1,8 +1,6 @@
 # uzi-plus
  Сайт для компании Узи+ в Смоленске
 
- Демонстрация вёрстки и тестирование: https://yurkaronin.github.io/uzi-plus/
-
 [шрифт используемый в дизайне: JOST](https://fonts.google.com/share?selection.family=Jost:wght@400;500;600)
 
 Для подключения с серверов гугла [а вдруг ;)]
