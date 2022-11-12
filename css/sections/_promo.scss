@@ -12,26 +12,15 @@
 
   .title {
     color: inherit;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 1.1;
-    letter-spacing: 0.01em;
     margin: 0;
-    margin-bottom: 0.7em;
 
-    &--clear {
-      margin: 0;
+    &+.subtitle {
+      margin-top: 0.7em;
     }
-
   }
 
   .subtitle {
     color: inherit;
-    margin: 0;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.4;
-    letter-spacing: 0.01em;
   }
 
   &__call {
@@ -64,14 +53,6 @@
   @media (max-width: 1440px) {
     .wrapper {
       grid-template-columns: 1fr 450px;
-    }
-
-    .title {
-      font-size: 32px;
-    }
-
-    .subtitle {
-      font-size: 20px;
     }
 
     a[href^="tel:"] {
@@ -133,13 +114,6 @@
   }
 
   @media (max-width: 425px) {
-    .title {
-      font-size: 26px;
-    }
-
-    .subtitle {
-      font-size: 18px;
-    }
 
     a[href^="tel:"] {
       font-size: 22px;

@@ -1,6 +1,7 @@
-<section class="benefits">
+<section class="benefits section">
   <div class="wrapper">
-    <ul class="benefits__list list-reset">
+    <h2 class="visually-hidden">Преимущества нашей клиники</h2>
+    <ul class="benefits__list">
       <li class="benefits__item">
         <div class="benefits__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none">

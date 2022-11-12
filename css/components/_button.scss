@@ -7,13 +7,12 @@
   border: 1px solid;
   border-color: var(--accent1);
   cursor: pointer;
-  height: 43px;
-  padding: 20px;
-  font-family: 'Jost', sans-serif;
+  padding: 1.5em 3em;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -22,7 +21,6 @@
   position: relative;
   border-radius: 70px;
   max-width: max-content;
-  line-height: 1;
 
   &--light {
     background-color: transparent;

@@ -29,21 +29,26 @@ include "./components/navigation.php";
 ?>
   <main>
     <!-- первый экран со слайдером -->
-    <?php include "./components/hero.php";
+    <?php
+    include "./components/hero.php";
     // Преимущества
     include "./components/benefits.php";
     // Основные направления анонсы
     include "./components/main-directions.php";
     // Услуги для детей
     include "./components/service-preview.php";
-    // промо блок
+    // Промо блок
     include "./components/promo.php";
     // Услуги взрослым
     include "./components/service-preview-2.php";
-    // промо блок
+    // Промо блок 2
     include "./components/promo-2.php";
-    // мобильные ссылки нижнем экране
-    include "./components/navigation-mobile.php"; ?>
+    // Ведущие специалисты
+    include "./components/leading-specialists.php";
+    // Мобильные ссылки нижнем экране
+    include "./components/navigation-mobile.php";
+    ?>
+
   </main>
   <?php include "./components/scripts.php"; ?>
 </body>

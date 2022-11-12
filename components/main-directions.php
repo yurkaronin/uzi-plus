@@ -1,6 +1,6 @@
-<section class="main-directions">
+<section class="main-directions section">
   <div class="wrapper">
-    <h2 class="title ">Основные направления</h2>
+    <h2 class="title">Основные направления</h2>
     <ul class="main-directions__list">
       <li class="main-directions__card">
         <div class="main-directions__content">
@@ -8,7 +8,7 @@
           <p class="main-directions__text">от артопедии и педиатрии до ультразвуковой диагностики</p>
           <a href="" class="button button--icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-              <path stroke="#000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5" />
+              <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5" />
             </svg><span>Подробнее</span>
           </a>
           <div class="main-directions__image">

@@ -1,10 +1,10 @@
-<section class="service-preview">
+<section class="service-preview section">
   <div class="wrapper">
     <h2 class="title">Услуги для детей</h2>
     <p class="subtitle">Ультразвуковая диагностика помогает врачам всех специальностей в обследовании пациента и
       уточнения диагноза. Пациентов самого юного возраста это исследование тоже не обходит стороной.</p>
 
-    <ul class="service-preview__list list-reset">
+    <ul class="service-preview__list">
       <li class="service-preview__item">
         <a href="#" class="service-preview__link">
           <div class="service-preview__icon">

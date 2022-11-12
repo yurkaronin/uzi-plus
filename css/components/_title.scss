@@ -4,11 +4,18 @@
   line-height: 1.1;
   color: var(--black);
   margin: 0;
-  margin-bottom: 30px;
-  font-family: 'Jost', sans-serif;
+  margin-bottom: 0.6em;
+  letter-spacing: 0.01em;
 
   @media (max-width: 1440px) {
     font-size: 42px;
-    margin-bottom: 16px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+
+  }
+  @media (max-width: 425px) {
+    font-size: 28px;
   }
 }

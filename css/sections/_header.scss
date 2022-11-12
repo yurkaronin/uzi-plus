@@ -67,9 +67,12 @@
     display: flex;
     grid-gap: 20px;
     justify-content: flex-end;
+    align-items: center;
 
     .button {
       max-width: max-content;
+      // padding-top: 15px;
+      // padding-bottom: 15px;
     }
   }
 

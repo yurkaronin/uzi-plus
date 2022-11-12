@@ -1,0 +1,23 @@
+.swiper-button {
+  border: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: all 0.3s;
+  position: initial !important;
+
+  &-disabled {
+    opacity: 0.2 !important;
+    border: 1px solid;
+    border-color: var(--black);
+  }
+
+  &:after,
+  &:before {
+    display: none !important;
+  }
+}
