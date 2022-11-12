@@ -1,7 +1,7 @@
 .promo {
-  padding: 32px 0;
+  padding: 32px 0 35px;
   background-color: #018079;
-  color: #ffffff;
+  color: var(--white);
 
   .wrapper {
     display: grid;
@@ -13,9 +13,11 @@
   .title {
     color: inherit;
     margin: 0;
+    font-size: 35px;
 
     &+.subtitle {
-      margin-top: 0.7em;
+      margin-top: 1em;
+      margin-bottom: 0;
     }
   }
 
@@ -25,7 +27,7 @@
 
   &__call {
     background: #41E1BB;
-    border-radius: 60px 200px 200px 0px;
+    border-radius: 110px 200px 200px 0;
     padding: 54px 82px 57px;
 
     &--mod {
@@ -37,17 +39,18 @@
     font-weight: 700;
     font-size: 35px;
     line-height: 1.1;
-    letter-spacing: 0.01em;
     display: block;
     margin-bottom: 0.57em;
 
-    color: #FFFFFF;
+    color: var(--white);
   }
 
   .button {
-    height: 60px;
-    width: 100%;
-    max-width: 313px;
+    // font-size: 20px;
+    
+    // height: 60px;
+    // width: 100%;
+    // max-width: 313px;
   }
 
   @media (max-width: 1440px) {

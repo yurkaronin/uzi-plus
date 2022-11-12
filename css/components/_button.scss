@@ -7,14 +7,13 @@
   border: 1px solid;
   border-color: var(--accent1);
   cursor: pointer;
-  padding: 1.5em 3em;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 20px;
+  padding: 1.1em 2em;
   line-height: 1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: var(--black);
   box-shadow: none;
@@ -28,11 +27,15 @@
   }
 
   &--icon {
-    padding: 25px 45px;
     display: flex;
     align-items: center;
     gap: 20px;
     line-height: 1;
+  }
+  &--small {
+    padding: 1em 2em;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   &:hover,

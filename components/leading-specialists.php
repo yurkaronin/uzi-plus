@@ -1,41 +1,79 @@
 <section class="leading-specialists section">
   <div class="wrapper">
     <h2 class="title">Ведущие специалисты</h2>
-    <div class="grid">
+    <div class="slider">
+    <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <div class="grid">
+        <div class="left">
+          <div class="photo">
+            <img src="./img/people/temporary-photo.jpg" alt="фотография врача Анощенкова Лариса Викторовна" width="448">
+          </div>
+          <span class="name">Анощенкова Лариса Викторовна</span>
+        </div>
 
-      <div class="left">
-        <div class="photo">
-          <img src="./img/people/temporary-photo.jpg" alt="фотография врача Анощенкова Лариса Викторовна" width="448">
+        <div class="right">
+          <span class="experience">Стаж работы: с 1992 года</span>
+          <div class="text">
+            <ul>
+              <li><strong>Где принимает:</strong> все филиалы</li>
+              <li><strong>Специализация:</strong> акушерство и гинекология: поликлиническое, неоперативное, оперативное,
+                гинекология детского возраста, эндокринология-гинекология, планирование и ведение беременности,
+                невынашивание беременности,
+                гинекология климактерического периода, кольпоскопия, патология шейки матки.</li>
+              <li><strong>Кого принимает:</strong> Взрослые и дети</li>
+              <li><strong>Специальность:</strong> Врач акушер-гинеколог. Высшая квалификационная категория</li>
+              <li><strong>Образование:</strong> Закончила СГМИ, интернатура, ординатура.</li>
+              <li><strong>Сфера деятельности:</strong> акушерство и гинекология: поликлиническое, неоперативное,
+                оперативное, гинекология детского возраста, эндокринология-гинекология, планирование и ведение
+                беременности,
+                невынашивание беременности, гинекология климактерического периода, кольпоскопия, патология шейки матки.
+              </li>
+            </ul>
+          </div>
+          <div class="buttons">
+            <a href="#" class="button button--icon" type="button"><svg width="13" height="20" viewBox="0 0 13 20"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.409484 0.470069C0.978302 -0.132209 1.92766 -0.159333 2.52994 0.409484L12.6846 10L2.52994 19.5905C1.92766 20.1593 0.978302 20.1322 0.409484 19.5299C-0.159333 18.9277 -0.132209 17.9783 0.470069 17.4095L8.3154 10L0.470069 2.59052C-0.132209 2.02171 -0.159333 1.07235 0.409484 0.470069Z"
+                  fill="black" />
+              </svg>
+              Подробнее</a>
+            <a href="#" class="button button--icon" type="button"><svg width="22" height="22" viewBox="0 0 22 22"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3885 1.61151C19.8789 1.09944 19.2729 0.693387 18.6054 0.416794C17.938 0.140201 17.2225 -0.00145225 16.5 1.12249e-05C15.7776 -0.000961059 15.0622 0.140917 14.3948 0.417481C13.7275 0.694046 13.1214 1.09984 12.6115 1.61151L0.0213125 14.201L0 22H7.777L20.3885 9.38851C20.8994 8.87799 21.3046 8.27181 21.5811 7.6046C21.8576 6.9374 22 6.22224 22 5.50001C22 4.77778 21.8576 4.06263 21.5811 3.39542C21.3046 2.72821 20.8994 2.12203 20.3885 1.61151ZM6.6385 19.25H5.5V16.5H2.76581L2.76856 15.345L14.5558 3.55576L18.4443 7.44426L6.6385 19.25Z"
+                  fill="black" />
+              </svg>
+              Записаться на приём</a>
+          </div>
         </div>
-        <span class="name">Анощенкова Лариса Викторовна</span>
-      </div>
 
-      <div class="right">
-        <span class="experience">Стаж работы: с 1992 года</span>
-        <div class="text">
-          <ul>
-            <li><strong>Где принимает:</strong> все филиалы</li>
-            <li><strong>Специализация:</strong> акушерство и гинекология: поликлиническое, неоперативное, оперативное,
-              гинекология детского возраста, эндокринология-гинекология, планирование и ведение беременности,
-              невынашивание беременности,
-              гинекология климактерического периода, кольпоскопия, патология шейки матки.</li>
-            <li><strong>Кого принимает:</strong> Взрослые и дети</li>
-            <li><strong>Специальность:</strong> Врач акушер-гинеколог. Высшая квалификационная категория</li>
-            <li><strong>Образование:</strong> Закончила СГМИ, интернатура, ординатура.</li>
-            <li><strong>Сфера деятельности:</strong> акушерство и гинекология: поликлиническое, неоперативное,
-              оперативное, гинекология детского возраста, эндокринология-гинекология, планирование и ведение
-              беременности,
-              невынашивание беременности, гинекология климактерического периода, кольпоскопия, патология шейки матки.
-            </li>
-          </ul>
-        </div>
-        <div class="buttons">
-          <a href="#" class="button" type="button button--icon">Подробнее</a>
-          <a href="#" class="button" type="button button--icon">Записаться на приём</a>
-        </div>
       </div>
+      </div>
+    </div>
+    </div>
+      
+
+      <!-- кнопки слайдера  -->
+      <button class="slider-button slider-button--prev"><svg width="27" height="22" viewBox="0 0 27 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 11.375L2 11.375M10.625 20L2 11.375L10.625 2.75" stroke="black" stroke-width="4"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="slider-button slider-button--next"><svg width="27" height="22" viewBox="0 0 27 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 10.625H25M16.375 2L25 10.625L16.375 19.25" stroke="black" stroke-width="4"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="swiper-pagination"></div>
 
     </div>
+
+
 
 
   </div>

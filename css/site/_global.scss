@@ -13,7 +13,7 @@ body {
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   line-height: 1.4;
   background-color: var(--white);
   position: relative;
@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   font-size: var(--fsz);
   color: var(--black);
+  letter-spacing: 0.01em;
 }
 
 img {

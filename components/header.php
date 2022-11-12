@@ -60,8 +60,8 @@
       </ul>
       <!-- кнопки вызова диалоговых окон  -->
       <div class="header__buttons">
-        <a href="#" class="button button--light">Выезд на дом</a>
-        <a href="#" class="button">Записаться к врачу</a>
+        <a href="#" class="button button--small button--light">Выезд на дом</a>
+        <a href="#" class="button button--small ">Записаться к врачу</a>
       </div>
       <!-- кнопка поиска  -->
       <a class="header__search button" href="#">
