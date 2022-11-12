@@ -115,11 +115,8 @@
     }
   }
 
-
-
   @media (min-width: 769px) {
     li {
-
       &:hover,
       &:focus {
         .navigation__link {
@@ -147,9 +144,8 @@
     }
 
     li {
-
-      &:hover>.navigation__sublist,
-      &:focus>.navigation__sublist {
+      &:hover > .navigation__sublist,
+      &:focus > .navigation__sublist {
         opacity: 1;
         pointer-events: initial;
       }
@@ -246,5 +242,4 @@
       }
     }
   }
-
 }
