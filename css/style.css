@@ -326,15 +326,9 @@ input[type=radio].visually-hidden {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  max-width: max-content;
-}
-.social-list li {
-  flex-grow: 0;
-  margin-right: 8px;
-}
-.social-list li:last-child {
-  margin-right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
 }
 .social-list a {
   display: flex;
@@ -546,6 +540,7 @@ input[type=radio].visually-hidden {
   justify-content: flex-end;
   align-items: center;
   flex-grow: 0;
+  margin-left: auto;
 }
 .header__buttons .button {
   flex-grow: 0;
@@ -569,9 +564,6 @@ input[type=radio].visually-hidden {
     max-width: 140px;
     display: flex;
     align-items: center;
-  }
-  .header__buttons {
-    gap: 12px;
   }
 }
 @media (max-width: 930px) {
@@ -598,16 +590,6 @@ input[type=radio].visually-hidden {
   .header__top {
     display: none;
   }
-  .header__buttons {
-    display: none;
-  }
-  .header .social-list {
-    margin: 0;
-    margin-left: auto;
-    max-width: max-content;
-  }
-}
-@media (max-width: 650px) {
   .header__buttons {
     display: none;
   }
@@ -1852,6 +1834,68 @@ input[type=radio].visually-hidden {
     width: 100%;
     max-width: 100%;
   }
+}
+
+.ratings {
+  background-color: #dbfff6;
+}
+.ratings__container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.ratings__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ratings__item {
+  background: #ffffff;
+  padding: 30px 48px 25px 25px;
+  border-radius: 40px 100px 100px 0px;
+  max-width: 304px;
+  width: 100%;
+  margin-bottom: 32px;
+  position: absolute;
+}
+.ratings__item:first-child {
+  top: 37px;
+  left: -117px;
+}
+.ratings__item:nth-child(2) {
+  bottom: 131px;
+  left: -229px;
+}
+.ratings__item:nth-child(3) {
+  top: 37px;
+  right: -170px;
+}
+.ratings__item:last-child {
+  bottom: 131px;
+  right: -281px;
+}
+.ratings__top-details {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: auto 135px;
+  margin-bottom: 16px;
+}
+.ratings__top-details span {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.ratings__stars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 24px);
+  gap: 3px;
 }
 
 @keyframes show-header {

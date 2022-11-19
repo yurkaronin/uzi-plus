@@ -66,6 +66,7 @@
     justify-content: flex-end;
     align-items: center;
     flex-grow: 0;
+    margin-left: auto;
 
     .button {
       flex-grow: 0;
@@ -95,10 +96,6 @@
       align-items: center;
     }
 
-    &__buttons {
-      gap: 12px;
-      // max-width: 340px;
-    }
   }
 
   @media (max-width: 930px) {
@@ -130,17 +127,6 @@
       display: none;
     }
 
-    &__buttons {
-      display: none;
-    }
-    .social-list {
-      margin: 0;
-      margin-left: auto;
-      max-width: max-content;
-    }
-  }
-
-  @media (max-width: 650px) {
     &__buttons {
       display: none;
     }
