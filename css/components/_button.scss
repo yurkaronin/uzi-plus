@@ -29,12 +29,12 @@
   &--icon {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     line-height: 1;
   }
   &--small {
     padding: 1em 2em;
-    font-size: 14px;
+    font-size: 14px !important;
     font-weight: 600;
   }
 
@@ -45,6 +45,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (max-width: 1440px) {
+    font-size: 16px;
   }
 
   @media (max-width: 1024px) {

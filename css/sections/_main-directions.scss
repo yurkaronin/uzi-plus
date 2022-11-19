@@ -69,10 +69,10 @@
     color: var(--white);
   }
 
-  .button {
-    font-size: 20px;
-    padding: 1.1em 2em;
-  }
+  // .button {
+  //   font-size: 20px;
+  //   padding: 1.1em 2em;
+  // }
 
   @media (max-width: 1440px) {
     &__card {
@@ -99,6 +99,7 @@
 
     &__text {
       font-size: 16px;
+      max-width: initial;
     }
 
     &__item-name {

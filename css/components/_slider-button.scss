@@ -41,4 +41,13 @@
   &:hover {
     background-color: var(--accent1);
   }
+
+  @media (max-width: 1440px) {
+    &--prev {
+      left: -35px;
+    }
+    &--next {
+      right: -35px;
+    }
+  }
 }

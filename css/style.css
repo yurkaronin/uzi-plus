@@ -191,6 +191,26 @@ input[type=radio].visually-hidden {
 .slider-button:hover {
   background-color: var(--accent1);
 }
+@media (max-width: 1440px) {
+  .slider-button--prev {
+    left: -35px;
+  }
+  .slider-button--next {
+    right: -35px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: var(--brand4);
+  opacity: 1;
+  margin: 0 !important;
+  margin-right: 20px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--black);
+}
 
 .wrapper {
   max-width: 1352px;
@@ -234,12 +254,12 @@ input[type=radio].visually-hidden {
 .button--icon {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
   line-height: 1;
 }
 .button--small {
   padding: 1em 2em;
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 600;
 }
 .button:hover, .button:focus {
@@ -247,6 +267,11 @@ input[type=radio].visually-hidden {
 }
 .button:active {
   opacity: 0.3;
+}
+@media (max-width: 1440px) {
+  .button {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1024px) {
   .button {
@@ -891,15 +916,7 @@ input[type=radio].visually-hidden {
   padding-right: 10px;
 }
 .slider-hero .button {
-  height: 72px;
-  padding: 25px 45px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-weight: 700;
   font-size: 20px;
-  text-transform: uppercase;
-  color: var(--black);
 }
 .slider-hero__list {
   width: 100%;
@@ -1121,10 +1138,7 @@ input[type=radio].visually-hidden {
     bottom: 0 !important;
   }
   .slider-hero .button {
-    height: initial;
     margin-bottom: 0;
-    padding: 18px 35px;
-    font-size: 12px;
   }
   .slider-hero__description {
     max-width: 100%;
@@ -1356,10 +1370,6 @@ input[type=radio].visually-hidden {
 .main-directions__card--mod .main-directions__item-name {
   color: var(--white);
 }
-.main-directions .button {
-  font-size: 20px;
-  padding: 1.1em 2em;
-}
 @media (max-width: 1440px) {
   .main-directions__card {
     padding: 25px 30px;
@@ -1380,6 +1390,7 @@ input[type=radio].visually-hidden {
   }
   .main-directions__text {
     font-size: 16px;
+    max-width: initial;
   }
   .main-directions__item-name {
     font-size: 28px;
@@ -1602,8 +1613,12 @@ input[type=radio].visually-hidden {
   }
 }
 
+.leading-specialists {
+  overflow: hidden;
+}
 .leading-specialists .slider {
   position: relative;
+  padding-bottom: 75px;
 }
 .leading-specialists .swiper {
   overflow: initial !important;
@@ -1617,16 +1632,18 @@ input[type=radio].visually-hidden {
 }
 .leading-specialists .grid {
   display: grid;
-  gap: 96px;
+  gap: 115px;
   grid-template-columns: 447px 1fr;
   background-color: #ffffff;
+  align-items: flex-start;
 }
 .leading-specialists .left {
   position: relative;
 }
 .leading-specialists .photo {
-  max-width: 448px;
-  background: #DBFFF6;
+  max-width: 450px;
+  max-height: 600px;
+  background: #dbfff6;
   border-radius: 0 60px 0 0;
   overflow: hidden;
 }
@@ -1636,14 +1653,14 @@ input[type=radio].visually-hidden {
 .leading-specialists .name {
   display: block;
   position: absolute;
-  right: -50px;
-  bottom: -20px;
-  max-width: 313px;
+  right: -60px;
+  bottom: -60px;
+  max-width: 315px;
   background-color: var(--white);
   border-radius: 0 200px 200px 165px;
-  padding: 26px 46px 35px 49px;
+  padding: 20px 40px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1.3;
   color: #060606;
   filter: drop-shadow(0px 6px 20px rgba(101, 104, 108, 0.1));
@@ -1651,7 +1668,8 @@ input[type=radio].visually-hidden {
 .leading-specialists .text {
   font-size: 18px;
   color: #828282;
-  padding-top: 55px;
+  margin-top: 62px;
+  margin-bottom: 55px;
 }
 .leading-specialists .text ul {
   list-style: none;
@@ -1659,25 +1677,25 @@ input[type=radio].visually-hidden {
   margin: 0;
 }
 .leading-specialists .text ul li {
-  margin-bottom: 24px;
+  margin-bottom: 1.7em;
 }
 .leading-specialists .text strong {
   font-weight: 600;
   color: var(--black);
 }
 .leading-specialists .experience {
-  background-color: #41E1BB;
+  background-color: #41e1bb;
   border-radius: 0 200px 200px 200px;
   font-size: 18px;
   line-height: 1;
-  color: var(--black);
-  padding: 12px 30px;
+  padding: 13px 20px;
   max-width: max-content;
   display: flex;
   align-items: center;
   position: absolute;
   left: -18px;
-  top: -6px;
+  top: 0;
+  color: var(--white);
 }
 .leading-specialists .right {
   position: relative;
@@ -1687,6 +1705,96 @@ input[type=radio].visually-hidden {
   gap: 24px;
   grid-template-columns: auto auto;
   justify-content: flex-start;
+}
+@media (max-width: 1440px) {
+  .leading-specialists .grid {
+    gap: 90px;
+    grid-template-columns: 1fr 2fr;
+  }
+  .leading-specialists .text {
+    padding-right: 50px;
+  }
+  .leading-specialists .text ul li {
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 1024px) {
+  .leading-specialists .grid {
+    grid-template-columns: 1fr 3fr;
+    gap: 32px;
+  }
+  .leading-specialists .text {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .leading-specialists .name {
+    max-width: 100%;
+    padding: 15px 25px;
+    font-size: 18px;
+    position: initial;
+    background-color: transparent;
+    border-radius: initial;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .leading-specialists .slider-button {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .leading-specialists .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  .leading-specialists .photo {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+  }
+  .leading-specialists .photo img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-position: top center;
+  }
+  .leading-specialists .name {
+    padding-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+  .leading-specialists .experience {
+    background-color: transparent;
+    border-radius: initial;
+    font-size: initial;
+    line-height: inherit;
+    padding: initial;
+    max-width: initial;
+    align-items: initial;
+    position: initial;
+    left: initial;
+    top: initial;
+    color: inherit;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 1em;
+  }
+  .leading-specialists .text {
+    padding: 0;
+    margin: 0;
+    max-height: 320px;
+    overflow: scroll;
+    margin-bottom: 32px;
+  }
+  .leading-specialists .buttons {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .leading-specialists .buttons .button {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @keyframes show-header {

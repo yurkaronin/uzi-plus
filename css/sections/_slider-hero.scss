@@ -105,15 +105,15 @@
   }
 
   .button {
-    height: 72px;
-    padding: 25px 45px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-weight: 700;
+    // height: 72px;
+    // padding: 25px 45px;
+    // display: flex;
+    // align-items: center;
+    // gap: 20px;
+    // font-weight: 700;
     font-size: 20px;
-    text-transform: uppercase;
-    color: var(--black);
+    // text-transform: uppercase;
+    // color: var(--black);
   }
 
   &__list {
@@ -389,10 +389,10 @@
     }
 
     .button {
-      height: initial;
+      // height: initial;
       margin-bottom: 0;
-      padding: 18px 35px;
-      font-size: 12px;
+      // padding: 18px 35px;
+      // font-size: 12px;
     }
 
     &__description {
