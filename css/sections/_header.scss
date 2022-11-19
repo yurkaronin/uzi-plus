@@ -65,7 +65,12 @@
     grid-gap: 20px;
     justify-content: flex-end;
     align-items: center;
+    flex-grow: 0;
 
+    .button {
+      flex-grow: 0;
+      padding: 1em;
+    }
   }
 
   &__search {
@@ -92,7 +97,7 @@
 
     &__buttons {
       gap: 12px;
-      max-width: 340px;
+      // max-width: 340px;
     }
   }
 
@@ -129,7 +134,9 @@
       display: none;
     }
     .social-list {
-      margin: 0 auto;
+      margin: 0;
+      margin-left: auto;
+      max-width: max-content;
     }
   }
 
