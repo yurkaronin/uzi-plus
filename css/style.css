@@ -1838,9 +1838,11 @@ input[type=radio].visually-hidden {
 
 .ratings {
   background-color: #dbfff6;
+  padding-bottom: 0;
 }
 .ratings__container {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -1875,9 +1877,8 @@ input[type=radio].visually-hidden {
   right: -281px;
 }
 .ratings__top-details {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: auto 135px;
+  display: flex;
+  align-items: center;
   margin-bottom: 16px;
 }
 .ratings__top-details span {
@@ -1896,6 +1897,104 @@ input[type=radio].visually-hidden {
   display: grid;
   grid-template-columns: repeat(5, 24px);
   gap: 3px;
+  margin-left: 24px;
+}
+.ratings__image img {
+  display: block;
+}
+.ratings__logo {
+  height: 37px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  .ratings__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: initial;
+    width: initial;
+    align-items: flex-end;
+  }
+  .ratings__list {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+  .ratings__item {
+    position: initial;
+    padding: 22px 46px 22px 22px;
+    margin-bottom: 0;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .ratings__top-details {
+    margin-bottom: 0;
+  }
+  .ratings__logo {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  .ratings {
+    padding-bottom: 60px;
+  }
+  .ratings__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .ratings__image {
+    margin: 0 auto;
+  }
+  .ratings__list {
+    gap: 16px 32px;
+    grid-template-columns: auto auto;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .ratings__item {
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ratings__top-details {
+    margin-bottom: 12px;
+  }
+  .ratings__logo {
+    margin-left: 0;
+  }
+}
+@media (max-width: 680px) {
+  .ratings__container {
+    display: block;
+  }
+  .ratings__list {
+    grid-template-columns: 1fr;
+  }
+  .ratings__item {
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: self-start;
+    padding: 22px;
+  }
+  .ratings__top-details {
+    margin-bottom: 12px;
+    margin-right: 24px;
+    flex-shrink: 0;
+  }
+  .ratings__top-details span {
+    font-size: 27px;
+  }
+  .ratings__logo {
+    flex-shrink: 0;
+    height: initial;
+  }
 }
 
 @keyframes show-header {
