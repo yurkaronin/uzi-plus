@@ -865,6 +865,9 @@ input[type=radio].visually-hidden {
     border-bottom: 1px solid #ffffff !important;
     margin: 0;
   }
+  .navigation .mobile-elements__office-hours span {
+    margin-bottom: 0 !important;
+  }
 }
 
 .hero {

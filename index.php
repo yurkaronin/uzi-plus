@@ -45,6 +45,8 @@ include "./components/navigation.php";
     include "./components/promo-2.php";
     // Ведущие специалисты
     include "./components/leading-specialists.php";
+    // Ведущие специалисты
+    include "./components/ratings.php";
     // Мобильные ссылки нижнем экране
     include "./components/navigation-mobile.php";
     ?>
