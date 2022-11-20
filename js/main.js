@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // подключаем файлы тут
   includeFiles("./js/parts/sliders.js");
+  includeFiles("./js/parts/accordion.js");
   // показываем меню при клике по кнопке
   menuButton.addEventListener('click', function () {
     // узнаём высоту шапки
