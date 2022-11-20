@@ -223,6 +223,11 @@ input[type=radio].visually-hidden {
     padding: 0 26px;
   }
 }
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+}
 
 .button {
   display: flex;
@@ -564,6 +569,9 @@ input[type=radio].visually-hidden {
   }
 }
 @media (max-width: 550px) {
+  .accordion {
+    margin-bottom: 20px;
+  }
   .accordion__title {
     font-size: 18px;
   }
@@ -1497,6 +1505,22 @@ input[type=radio].visually-hidden {
 .main-directions__card--mod .main-directions__item-name {
   color: var(--white);
 }
+.main-directions .description {
+  max-width: 1090px;
+  font-size: 18px;
+  color: #828282;
+}
+.main-directions .description p {
+  margin-top: 0;
+}
+.main-directions .description p:last-child {
+  margin-bottom: 0;
+}
+.main-directions .description .lead {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--black);
+}
 @media (max-width: 1440px) {
   .main-directions__card {
     padding: 25px 30px;
@@ -1536,22 +1560,9 @@ input[type=radio].visually-hidden {
     width: 100%;
     max-width: 100%;
   }
-}
-.main-directions .description {
-  max-width: 1090px;
-  font-size: 18px;
-  color: #828282;
-}
-.main-directions .description p {
-  margin-top: 0;
-}
-.main-directions .description p:last-child {
-  margin-bottom: 0;
-}
-.main-directions .description .lead {
-  font-weight: 600;
-  font-size: 24px;
-  color: var(--black);
+  .main-directions .description .lead {
+    font-size: 18px;
+  }
 }
 
 .service-preview__list {
@@ -2092,6 +2103,75 @@ input[type=radio].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.insurance-companies .subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  color: #828282;
+}
+.insurance-companies .group-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.1;
+  color: #000000;
+  margin-top: 1.5em;
+  margin-bottom: 0.85em;
+}
+.insurance-companies__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 30px 32px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.insurance-companies__item img {
+  display: block;
+  margin-bottom: 20px;
+}
+.insurance-companies__item p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #828282;
+}
+@media (max-width: 1440px) {
+  .insurance-companies__item img {
+    margin-bottom: 16px;
+  }
+  .insurance-companies__item p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 1024px) {
+  .insurance-companies__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px 24px;
+  }
+}
+@media (max-width: 768px) {
+  .insurance-companies .subtitle {
+    font-size: 18px;
+  }
+  .insurance-companies .group-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 650px) {
+  .insurance-companies__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .insurance-companies__list {
+    grid-template-columns: 1fr;
+  }
+  .insurance-companies__item img {
+    max-width: 200px;
+  }
 }
 
 @keyframes show-header {

@@ -74,6 +74,23 @@
   //   padding: 1.1em 2em;
   // }
 
+  .description {
+    max-width: 1090px;
+    font-size: 18px;
+    color: #828282;
+    p {
+      margin-top: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .lead {
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--black);
+    }
+  }
+
   @media (max-width: 1440px) {
     &__card {
       padding: 25px 30px;
@@ -122,22 +139,11 @@
       width: 100%;
       max-width: 100%;
     }
-  }
 
-  .description {
-    max-width: 1090px;
-    font-size: 18px;
-    color: #828282;
-    p {
-      margin-top: 0;
-      &:last-child {
-        margin-bottom: 0;
+    .description {
+      .lead {
+        font-size: 18px;
       }
-    }
-    .lead {
-      font-weight: 600;
-      font-size: 24px;
-      color: var(--black);
     }
   }
 }

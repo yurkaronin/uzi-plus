@@ -1,0 +1,82 @@
+.insurance-companies {
+  .title {
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: #828282;
+  }
+  .group-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.1;
+    color: #000000;
+    margin-top: 1.5em;
+    margin-bottom: 0.85em;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 30px 32px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  &__item {
+    img {
+      display: block;
+      margin-bottom: 20px;
+    }
+    p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      color: #828282;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    &__item {
+      img {
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px 24px;
+    }
+  }
+  @media (max-width: 768px) {
+    .subtitle {
+      font-size: 18px;
+    }
+    .group-title {
+      font-size: 22px;
+    }
+
+  }
+
+  @media (max-width: 650px) {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 425px) {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+    &__item {
+      img {
+        max-width: 200px;
+      }
+
+    }
+  }
+}
