@@ -335,8 +335,8 @@ input[type=radio].visually-hidden {
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 10px;
+  grid-template-columns: repeat(4, 43px);
+  gap: 16px;
 }
 .social-list a {
   display: flex;
@@ -2200,6 +2200,148 @@ input[type=radio].visually-hidden {
 }
 .certificates .swiper {
   padding-bottom: 70px;
+}
+
+.footer {
+  background-color: var(--brand2);
+  color: #ffffff;
+}
+.footer__top {
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+.footer__top .footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr 4fr;
+  gap: 32px;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+}
+.footer__social {
+  margin-top: auto;
+}
+.footer__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__menu a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 1.5em;
+}
+.footer__text {
+  margin: 0;
+  margin-bottom: 1.2em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+.footer__text:last-child {
+  margin-bottom: 0;
+}
+.footer__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  display: block;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+.footer__center {
+  background-color: var(--brand3);
+  padding: 20px 0;
+}
+.footer__center .footer__grid {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 32px;
+  align-items: center;
+}
+.footer__bottom {
+  background-color: var(--brand1);
+  padding: 20px 0 35px;
+}
+.footer__bottom .footer__grid {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 32px;
+  align-items: center;
+}
+.footer__links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.footer__links-list li {
+  margin-right: 32px;
+}
+.footer__links-list li:last-child {
+  margin-right: 0;
+}
+.footer__links-list a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.footer .pay-systems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.footer .pay-systems li {
+  margin-right: 10px;
+}
+.footer .pay-systems li:last-child {
+  margin-right: 0;
+}
+.footer .pay-systems img {
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+.footer__copy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #ffffff;
+  margin: 0;
+}
+.footer__developers-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 190px;
+}
+.footer .social-list {
+  grid-template-columns: repeat(4, 35px);
+}
+.footer .social-list a {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+}
+.footer .social-list svg {
+  scale: 0.8;
+}
+.footer .social-list svg path {
+  fill: #018079;
 }
 
 @keyframes show-header {

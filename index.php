@@ -58,7 +58,12 @@ include "./components/navigation.php";
     ?>
 
   </main>
-  <?php include "./components/scripts.php"; ?>
+  <?php 
+  // подвал 
+  include "./components/footer.php";
+  // скрипты 
+  include "./components/scripts.php"; 
+  ?>
 </body>
 
 </html>
