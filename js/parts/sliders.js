@@ -32,43 +32,39 @@ const leadingSpecialists = new Swiper(".leading-specialists .swiper", {
     nextEl: ".leading-specialists .slider-button--next",
     prevEl: ".leading-specialists .slider-button--prev",
   },
-  // effect: "creative",
-  // creativeEffect: {
-  //   prev: {
-  //     shadow: true,
-  //     translate: ["-20%", 0, -1],
-  //   },
-  //   next: {
-  //     translate: ["100%", 0, 0],
-  //   },
-  // },
+
 });
 
-// let leadingSpecialists = new Swiper(".leading-specialists .swiper", {
-//   pagination: {
-//     el: ".leading-specialists .swiper-pagination",
-//     type: "fraction",
-//   },
-//   navigation: {
-//     nextEl: ".leading-specialists .slider-button--next",
-//     prevEl: ".leading-specialists .slider-button--prev",
-//   },
-// });
+
 
 // слайдер с сертификатами 
 if(document.querySelector('.certificates')) {
   var certificatesSwiper = new Swiper(".certificates .mySwiper", {
-    slidesPerView: 4,
-    spaceBetween: 32,
+    spaceBetween: 16,
     // loop: true,
     pagination: {
       el: ".certificates .swiper-pagination",
-      type: "fraction",
+      // type: "fraction",
     },
-    navigation: {
-      nextEl: ".certificates .slider-button--next",
-      prevEl: ".certificates .slider-button--prev",
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+      },
+      550: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 640px
+      1024: {
+        slidesPerView: 4,
+      }
     },
+
   });
 };
 
