@@ -28,7 +28,7 @@
           </ul>
         </div>
 
-        <div class="footer__item">
+        <div class="footer__item footer__item--mod">
           <ul class="footer__menu">
             <li>
               <a href="#" class="bvi-open" title="Версия сайта для слабовидящих">Версия сайта для слабовидящих</a>
@@ -119,7 +119,7 @@
 
         </div>
         <div class="footer__item">
-          <span class="footer__subtitle">Принимаем к оплате:</span>
+          <!-- <span class="footer__subtitle">Принимаем к оплате:</span> -->
           <ul class="pay-systems">
             <li><img src="./img/pay-sys/1.jpg" alt="Платёжная система Мир"></li>
             <li><img src="./img/pay-sys/2.jpg" alt="Платёжная система Мастеркард"></li>
@@ -142,7 +142,7 @@
         </div>
         <div class="footer__item">
           <div class="footer__developers-link">
-            <a href="#">Разработчик сайта:<br>Юрий Савченко</a>
+            <a href="#">Разработчик сайта: <br> Юрий Савченко</a>
           </div>
         </div>
       </div>

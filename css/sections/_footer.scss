@@ -35,13 +35,18 @@
       display: block;
       margin-bottom: 1.5em;
     }
+    li:last-child {
+      a {
+        margin-bottom: 0;
+      }
+    }
   }
   &__text {
     margin: 0;
     margin-bottom: 1.2em;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.7;
     color: #ffffff;
     &:last-child {
       margin-bottom: 0;
@@ -69,7 +74,7 @@
 
   &__bottom {
     background-color: var(--brand1);
-    padding: 20px 0 35px;
+    padding: 32px 0 50px;
   }
   &__bottom &__grid {
     display: grid;
@@ -143,6 +148,49 @@
       path {
         fill: #018079;
       }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__top &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__center &__grid {
+      grid-template-columns: 3fr 1fr;
+    }
+    &__item--mod {
+      order: 3;
+    }
+    &__bottom &__grid {
+      grid-template-columns: 6fr 1fr;
+    }
+  }
+  @media (max-width: 768px) {
+    &__center &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__bottom &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__developers-link {
+      max-width: initial;
+      br {
+        display: none;
+      }
+    }
+    &__social {
+      margin-top: 24px;
+    }
+  }
+  @media (max-width: 650px) {
+    &__top &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__item--mod {
+      order: initial;
+    }
+    &__links-list {
+      flex-direction: column;
     }
   }
 }
