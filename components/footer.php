@@ -31,7 +31,7 @@
         <div class="footer__item">
           <ul class="footer__menu">
             <li>
-              <a href="#">Версия для слабовидящих</a>
+              <a href="#" class="bvi-open" title="Версия сайта для слабовидящих">Версия сайта для слабовидящих</a>
             </li>
             <li>
               <a href="#">Официальные данные</a>

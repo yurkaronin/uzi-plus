@@ -19,6 +19,7 @@
         <a href="#">
           <img src="./img/logo/logo.svg" alt="Логотип Узи+" width="177">
         </a>
+        
       </div>
       <!-- социальные ссылки  -->
       <?php include "./components/items/social-list.php"; ?>

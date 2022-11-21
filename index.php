@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="./libs/normalize.min.css">
   <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./libs/bvi.min.css" type="text/css">
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
