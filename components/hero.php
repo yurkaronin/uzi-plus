@@ -1,4 +1,5 @@
 <section class="hero">
+  <h1 class="visually-hidden">Узи+: Клиника в Смоленске. медицинское обслуживание для взрослых и детей</h1>
 
   <div class="swiper slider-hero">
     <div class="swiper-wrapper">

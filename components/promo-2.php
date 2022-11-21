@@ -1,6 +1,6 @@
 <section class="promo">
   <div class="wrapper">
-
+    <h2 class="visually-hidden">Появились вопросы по услугам?</h2>
     <div class="promo__text">
       <p class="title title--clear">Если у вас остались вопросы – звоните: </p>
     </div>

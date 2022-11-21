@@ -1101,15 +1101,6 @@ input[type=radio].visually-hidden {
   margin: 0;
   margin-right: 20px;
 }
-.slider-hero .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-  background-color: var(--white);
-  opacity: 1;
-}
-.slider-hero .swiper-pagination-bullet-active {
-  background-color: var(--black);
-}
 .slider-hero .decorate {
   display: inline-block;
   background-size: contain;
