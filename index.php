@@ -160,6 +160,7 @@ include "./components/navigation.php";
         </ul>
       </div>
     </section>
+    <?php include "./components/certificates.php"; ?>
 
   </main>
   <?php include "./components/scripts.php"; ?>

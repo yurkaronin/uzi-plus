@@ -54,3 +54,21 @@ const leadingSpecialists = new Swiper(".leading-specialists .swiper", {
 //     prevEl: ".leading-specialists .slider-button--prev",
 //   },
 // });
+
+// слайдер с сертификатами 
+if(document.querySelector('.certificates')) {
+  var certificatesSwiper = new Swiper(".certificates .mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 32,
+    // loop: true,
+    pagination: {
+      el: ".certificates .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".certificates .slider-button--next",
+      prevEl: ".certificates .slider-button--prev",
+    },
+  });
+};
+

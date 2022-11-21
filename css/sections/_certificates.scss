@@ -1,0 +1,23 @@
+.certificates {
+  &__link {
+    display: block;
+    max-width: 305px;
+    margin-bottom: 20px;
+
+    img {
+      display: block;
+    }
+  }
+  &__description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .swiper {
+    padding-bottom: 90px;
+  }
+}

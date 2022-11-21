@@ -200,6 +200,9 @@ input[type=radio].visually-hidden {
   }
 }
 
+.swiper-pagination {
+  font-weight: 700;
+}
 .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
@@ -2172,6 +2175,27 @@ input[type=radio].visually-hidden {
   .insurance-companies__item img {
     max-width: 200px;
   }
+}
+
+.certificates__link {
+  display: block;
+  max-width: 305px;
+  margin-bottom: 20px;
+}
+.certificates__link img {
+  display: block;
+}
+.certificates__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.certificates .wrapper {
+  position: relative;
+}
+.certificates .swiper {
+  padding-bottom: 90px;
 }
 
 @keyframes show-header {
