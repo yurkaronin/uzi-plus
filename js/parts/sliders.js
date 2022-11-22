@@ -2,6 +2,9 @@
 const sliderHero = new Swiper(".slider-hero", {
   loop: true,
   speed: 1400,
+  autoplay: {
+    delay: 4000,
+  },
   pagination: {
     el: ".slider-hero .swiper-pagination",
     clickable: true,
@@ -22,6 +25,9 @@ const sliderHero = new Swiper(".slider-hero", {
 const leadingSpecialists = new Swiper(".leading-specialists .swiper", {
   loop: true,
   speed: 1400,
+  autoplay: {
+    delay: 4000,
+  },
   slidesPerView: 1,
   spaceBetween: 64,
   pagination: {
