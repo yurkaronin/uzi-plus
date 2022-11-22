@@ -46,28 +46,33 @@ const leadingSpecialists = new Swiper(".leading-specialists .swiper", {
 // слайдер с сертификатами 
 if(document.querySelector('.certificates')) {
   var certificatesSwiper = new Swiper(".certificates .mySwiper", {
-    spaceBetween: 16,
+    
     // loop: true,
     pagination: {
       el: ".certificates .swiper-pagination",
       // type: "fraction",
+      clickable: true,
     },
 
     breakpoints: {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
+        spaceBetween: 0,
       },
       550: {
         slidesPerView: 2,
+        spaceBetween: 16,
       },
       // when window width is >= 480px
       768: {
         slidesPerView: 3,
+        spaceBetween: 16,
       },
       // when window width is >= 640px
       1024: {
         slidesPerView: 4,
+        spaceBetween: 16,
       }
     },
 

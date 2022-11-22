@@ -31,7 +31,7 @@
     text-align: center;
     transition: all 0.3s;
     position: relative;
-    gap: 12px;
+    // gap: 12px;
 
     &:before {
       content: "";
@@ -52,6 +52,7 @@
       height: 7px;
       transform: rotate(0);
       transition: all 0.3s;
+      margin-left: 12px;
 
       path {
         transition: all 0.3s;
@@ -159,7 +160,11 @@
     &__link {
       font-size: 14px;
       padding: 14px 0;
-      gap: 8px;
+      // gap: 8px;
+
+      svg {
+        margin-left: 8px;
+      }
     }
 
     &__sublist {
@@ -177,9 +182,9 @@
   @media (max-width: 768px) {
     left: -100%;
     position: absolute;
-    top: 63px;
+    top: 67px;
     width: 100%;
-    height: calc(100vh - 63px);
+    height: calc(100vh - 67px);
     overflow: auto;
     padding-bottom: 43px;
 
@@ -199,10 +204,6 @@
       border-bottom: 1px solid;
       border-color: var(--brand2);
       position: relative;
-
-      &:last-child {
-        // border-bottom: none;
-      }
     }
 
     a {
@@ -268,15 +269,16 @@
         }
 
         span {
-          font-weight: 700;
+          font-weight: 500;
           margin-bottom: 1em;
+          font-size: 14px;
         }
         a {
           display: block;
           text-align: center;
-          margin-bottom: 1em;
+          margin-bottom: 0.5em;
           padding: 0;
-          font-size: 23px;
+          font-size: 18px;
           &:last-child {
             margin-bottom: 0;
           }

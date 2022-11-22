@@ -2,8 +2,6 @@
   box-shadow: none;
   transform: none;
   border: none;
-  height: var(--elem-sz);
-  width: var(--elem-sz);
   // display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +10,7 @@
   width: 40px;
   height: 40px;
   background-color: var(--accent1);
-
+  flex-grow: 0;
   display: none;
 
   span {
@@ -53,12 +51,9 @@
     margin-top: 0;
     transform: rotate(-45deg);
   }
-  &:hover,
-  &.open {
-    // background-color: var(--col1);
-  }
 
   @media (max-width: 850px) {
     display: flex;
+    flex-direction: column;
   }
 }

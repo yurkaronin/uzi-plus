@@ -26,7 +26,6 @@
   <?php
 include "./components/up-button.php";
 include "./components/header.php";
-include "./components/navigation.php";
 ?>
   <main>
     <!-- первый экран со слайдером -->

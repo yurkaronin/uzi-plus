@@ -29,8 +29,12 @@
   &--icon {
     display: flex;
     align-items: center;
-    gap: 16px;
+    // gap: 16px;
     line-height: 1;
+
+    svg {
+      margin-right: 16px;
+    }
   }
   &--small {
     padding: 1em 2em;
@@ -55,9 +59,10 @@
     font-size: 12px;
 
     &--icon {
-      gap: 8px !important;
+      // gap: 8px !important;
 
       svg {
+        margin-right: 6px;
         width: 18px;
       }
     }
