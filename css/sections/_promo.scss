@@ -45,12 +45,37 @@
     color: var(--white);
   }
 
-  .button {
-    // font-size: 20px;
-    
-    // height: 60px;
-    // width: 100%;
-    // max-width: 313px;
+  &--mod {
+    .wrapper {
+      display: block;
+    }
+
+    .title {
+      font-size: 35px;
+      margin-right: 42px;
+      max-width: 250px;
+    }
+    .text {
+      max-width: 405px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .text {
+      margin: 0;
+      margin-right: 1em;
+    }
+    .tel[href^="tel:"] {
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+    .button {
+      margin-left: auto;
+    }
   }
 
   @media (max-width: 1440px) {
