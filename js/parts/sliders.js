@@ -77,5 +77,51 @@ if(document.querySelector('.certificates')) {
     },
 
   });
+
+  // слайдер с фотографиями 
+  if(document.querySelector('#js-photo-slider')) {
+    const photoSlider = new Swiper('#js-photo-slider .swiper', {
+      // Optional parameters
+      // direction: 'vertical',
+      loop: true,
+      // slidesPerView: 3,
+      // spaceBetween: 32,
+
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 16
+        },
+        // when window width is >= 480px
+        476: {
+          slidesPerView: 2,
+          spaceBetween: 24
+        },
+        // when window width is >= 640px
+        769: {
+          slidesPerView: 3,
+          spaceBetween: 32
+        }
+      },
+      // If we need pagination
+      pagination: {
+        el: '#js-photo-slider .swiper-pagination',
+        clickable: true,
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '#js-photo-slider .slider-button--next',
+        prevEl: '#js-photo-slider .slider-button--prev',
+      },
+    
+      // And if we need scrollbar
+      scrollbar: {
+        el: '#js-photo-slider .swiper-scrollbar',
+      },
+    });
+  };
+  
 };
 

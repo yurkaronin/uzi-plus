@@ -161,7 +161,7 @@ input[type=radio].visually-hidden {
   align-items: center;
   justify-content: center;
   background-color: var(--white);
-  border-radius: 45%;
+  border-radius: 50%;
   transition: all 0.3s;
   box-shadow: 0px 6px 20px rgba(101, 104, 108, 0.1);
   cursor: pointer;
@@ -2555,6 +2555,25 @@ input[type=radio].visually-hidden {
 .inner-page {
   padding-top: 85px;
   padding-bottom: 75px;
+}
+
+.photo-slider .swiper {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.photo-slider .slider-button--prev {
+  left: 10px;
+}
+.photo-slider .slider-button--next {
+  right: 10px;
+}
+.photo-slider .swiper-scrollbar-drag {
+  background: rgba(181, 20, 126, 0.7);
+}
+@media (max-width: 425px) {
+  .photo-slider .slider-button {
+    display: none;
+  }
 }
 
 @keyframes show-header {
