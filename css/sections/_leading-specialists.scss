@@ -19,7 +19,7 @@
     display: grid;
     gap: 115px;
     grid-template-columns: 447px 1fr;
-    background-color: #ffffff;
+    background-color: var(--White);
     align-items: flex-start;
   }
 
@@ -45,7 +45,7 @@
     right: -60px;
     bottom: -60px;
     max-width: 315px;
-    background-color: var(--white);
+    background-color: var(--White);
     border-radius: 0 200px 200px 165px;
     padding: 20px 40px;
     font-weight: 500;
@@ -57,7 +57,7 @@
 
   .text {
     font-size: 18px;
-    color: #828282;
+    color: var(--Gray1);
     margin-top: 62px;
     margin-bottom: 55px;
 
@@ -73,7 +73,7 @@
 
     strong {
       font-weight: 600;
-      color: var(--black);
+      color: var(--Black);
     }
   }
   .experience {
@@ -88,7 +88,7 @@
     position: absolute;
     left: -18px;
     top: 0;
-    color: var(--white);
+    color: var(--White);
   }
   .right {
     position: relative;

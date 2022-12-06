@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--brand2);
-  color: #ffffff;
+  color: var(--White);
 
   &__top {
     padding-top: 64px;
@@ -31,7 +31,7 @@
       line-height: 1.1;
       letter-spacing: 0.01em;
       text-transform: uppercase;
-      color: #ffffff;
+      color: var(--White);
       display: block;
       margin-bottom: 1.5em;
     }
@@ -47,7 +47,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #ffffff;
+    color: var(--White);
     &:last-child {
       margin-bottom: 0;
     }
@@ -58,7 +58,7 @@
     line-height: 1.3;
     letter-spacing: 0.01em;
     display: block;
-    color: #ffffff;
+    color: var(--White);
     margin-bottom: 1em;
   }
   &__center {
@@ -99,7 +99,7 @@
       font-size: 16px;
       line-height: 1.1;
       text-decoration-line: underline;
-      color: #ffffff;
+      color: var(--White);
     }
   }
   .pay-systems {
@@ -126,7 +126,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.1;
-    color: #ffffff;
+    color: var(--White);
     margin: 0;
   }
   &__developers-link {
@@ -141,7 +141,7 @@
     a {
       width: 35px;
       height: 35px;
-      background-color: #ffffff;
+      background-color: var(--White);
     }
     svg {
       scale: 0.8;

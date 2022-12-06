@@ -1,6 +1,6 @@
 .navigation {
   background-color: var(--brand1);
-  color: var(--white);
+  color: var(--White);
   transition-duration: 0.3s;
   position: relative;
   z-index: 88;
@@ -56,7 +56,7 @@
 
       path {
         transition: all 0.3s;
-        stroke: var(--white);
+        stroke: var(--White);
       }
     }
   }
@@ -70,8 +70,8 @@
     width: 650px;
     height: 525px;
     padding: 45px 60px 50px;
-    background: var(--white);
-    color: var(--black);
+    background: var(--White);
+    color: var(--Black);
     box-shadow: 0px 6px 20px rgb(101 104 108 / 10%);
     border-radius: 0px 40px 40px 40px;
     display: flex;
@@ -84,7 +84,7 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 1;
-      color: var(--black);
+      color: var(--Black);
       text-transform: initial;
       padding: 0;
       position: relative;
@@ -237,7 +237,7 @@
       font-size: 14px;
       padding: 16px 10px;
       justify-content: center;
-      color: var(--white);
+      color: var(--White);
       display: flex;
       text-transform: uppercase;
 
@@ -285,9 +285,9 @@
         }
       }
       &__office-hours {
-        border-top: 1px solid #ffffff !important;
+        border-top: 1px solid var(--White) !important;
         padding: 1em 0;
-        border-bottom: 1px solid #ffffff !important;
+        border-bottom: 1px solid var(--White) !important;
         margin: 0;
         span {
           margin-bottom: 0 !important;

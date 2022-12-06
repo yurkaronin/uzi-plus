@@ -4,13 +4,13 @@
   .subtitle {
     font-weight: 400;
     font-size: 24px;
-    color: #828282;
+    color: var(--Gray1);
   }
   .group-title {
     font-weight: 700;
     font-size: 35px;
     line-height: 1.1;
-    color: #000000;
+    color: var(--Black);
     margin-top: 1.5em;
     margin-bottom: 0.85em;
   }
@@ -32,7 +32,7 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 130%;
-      color: #828282;
+      color: var(--Gray1);
     }
   }
 

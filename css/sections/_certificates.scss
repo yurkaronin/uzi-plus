@@ -8,13 +8,16 @@
 
     img {
       display: block;
+      // max-height: 423px;
+      // max-width: 305px;
+      // object-fit: cover;
     }
   }
   &__description {
     margin: 0;
     font-weight: 400;
     font-size: 16px;
-    color: #000000;
+    color: var(--Black);
     padding-right: 32px;
   }
   .wrapper {
