@@ -592,17 +592,17 @@ input[type=radio].visually-hidden {
   margin: 0;
   align-items: flex-start;
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 0.5em;
 }
 .breadcrumbs li {
-  margin-right: 1em;
+  margin-right: 0.5em;
   display: flex;
   align-items: center;
   color: var(--gray1);
 }
 .breadcrumbs li::after {
   content: url("../img/icons/breadcrumbs-arow.svg");
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 .breadcrumbs li:last-child {
   color: var(--brand2);
@@ -612,6 +612,11 @@ input[type=radio].visually-hidden {
 }
 .breadcrumbs li:first-child a {
   margin-left: 0.5em;
+}
+@media (max-width: 650px) {
+  .breadcrumbs li {
+    font-size: 14px;
+  }
 }
 
 .photo-benefits {
@@ -655,6 +660,29 @@ input[type=radio].visually-hidden {
   width: 80px;
   height: 80px;
 }
+.photo-benefits__list .icon svg {
+  flex-shrink: 0;
+}
+@media (max-width: 1200px) {
+  .photo-benefits {
+    grid-template-columns: 3fr 2fr;
+  }
+  .photo-benefits__list .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .photo-benefits__list .icon svg {
+    scale: 0.7;
+  }
+  .photo-benefits__list li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 650px) {
+  .photo-benefits {
+    grid-template-columns: 1fr;
+  }
+}
 
 .simple-text {
   margin-bottom: 90px;
@@ -668,6 +696,11 @@ input[type=radio].visually-hidden {
   font-size: 24px;
   color: var(--black);
   margin-bottom: 2em;
+}
+@media (max-width: 1200px) {
+  .simple-text .lead {
+    font-size: 20px;
+  }
 }
 
 .header {

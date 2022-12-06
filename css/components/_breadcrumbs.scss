@@ -4,16 +4,16 @@
   margin: 0;
   align-items: flex-start;
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 0.5em;
   li {
-    margin-right: 1em;
+    margin-right: 0.5em;
     display: flex;
     align-items: center;
     color: var(--gray1);
 
     &::after {
       content: url("../img/icons/breadcrumbs-arow.svg");
-      margin-left: 1em;
+      margin-left: 0.5em;
     }
 
     &:last-child {
@@ -26,6 +26,11 @@
       a {
         margin-left: 0.5em;
       }
+    }
+  }
+  @media (max-width: 650px) {
+    li {
+      font-size: 14px;
     }
   }
 }
