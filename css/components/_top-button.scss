@@ -21,6 +21,11 @@
     pointer-events: none;
   }
 
+  @media (max-width: 768px) {
+    width: 70px;
+    height: 70px;
+  }
+
 }
 
 .up-button-show {

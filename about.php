@@ -12,14 +12,14 @@ include "./components/header.php";
         <li><a><span>О нашей клинике</span></a></li>
       </ul>
       <!-- Главный заголовок страницы  -->
-      <h1 class="title">Медицинские центры «Узи+»</h1>
+      <h1 class="title">Медицинские центры «УЗИ+»</h1>
 
       <!-- фото с преимуществами  -->
       <div class="photo-benefits">
         <div class="photo-benefits__img">
           <a href="./img/photo/about-us/1.jpg" data-fancybox="gallery-photo-benefits"
             data-caption="Подпись к фотографии">
-            <img src="./img/photo/about-us/1.jpg" width="673" alt="фото интерьера в клинике Узи+">
+            <img src="./img/photo/about-us/1.jpg" width="673" alt="фото интерьера в клинике УЗИ+">
           </a>
         </div>
         <div class="photo-benefits__list">

@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="footer__grid">
         <div class="footer__item">
-          <img src="./img/logo/logo-white.svg" alt="Логотип компании Узи+" width="177">
+          <img src="./img/logo/logo-white.svg" alt="Логотип компании УЗИ+" width="177">
 
           <div class="footer__social">
             <span class="footer__subtitle">Мы всегда на связи!</span>
@@ -138,7 +138,7 @@
     <div class="wrapper">
       <div class="footer__grid">
         <div class="footer__item">
-          <p class="footer__copy">© Узи+ 2007-2022 ООО "МЦ "УЗИ+", г. Смоленск, ул. Попова, д. 68.<br>
+          <p class="footer__copy">© УЗИ+ 2007-2022 ООО "МЦ "УЗИ+", г. Смоленск, ул. Попова, д. 68.<br>
             Лицензия № ЛО 67-01-001392 от 21.12.2018. Любое копирование материалов сайта без указания источника
             запрещена, <br>
             согласно 4ч, раздел 7 Гражданского Кодекса РФ.</p>

@@ -1,5 +1,5 @@
 # uzi-plus
- Сайт для компании Узи+ в Смоленске
+ Сайт для компании УЗИ+ в Смоленске
 
 [шрифт используемый в дизайне: JOST](https://fonts.google.com/share?selection.family=Jost:wght@400;500;600)
 

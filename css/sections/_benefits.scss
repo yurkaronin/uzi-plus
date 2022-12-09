@@ -67,7 +67,9 @@
   @media (max-width: 650px) {
     &__list {
       grid-template-columns: 1fr;
-
+    }
+    &__icon {
+      margin-bottom: 0;
     }
 
     &__text {
@@ -79,6 +81,10 @@
       align-items: center;
       gap: 24px;
       grid-template-columns: 40px 1fr;
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

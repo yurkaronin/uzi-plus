@@ -4,7 +4,7 @@
     <ul class="navigation__list">
       <li><a class="navigation__link" href="./index.php">Главная</a></li>
 
-      <li><a class="navigation__link navigation__link--mod" href="#">Услуги детям
+      <li><a class="navigation__link navigation__link--mod" href="./services-for-children.php">Услуги детям
           <svg width="13" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="m11.346 1-5 4-5-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -26,7 +26,7 @@
           <li><a href="#">Сосудистая хирургия</a></li>
           <li><a href="#">Терапия</a></li>
           <li><a href="#">Травматология-ортопедия</a></li>
-          <li><a href="#">Ультразвуковая диагностика</a></li>
+          <li><a href="./service-children-uzy.php">Ультразвуковая диагностика</a></li>
           <li><a href="#">Урология</a></li>
           <li><a href="#">Функциональная диагностика</a></li>
           <li><a href="#">Хирургия</a></li>
@@ -36,7 +36,7 @@
       </li>
 
       <li>
-        <a class="navigation__link navigation__link--mod" href="#">Услуги взрослым
+        <a class="navigation__link navigation__link--mod" href="./services-for-adult.php">Услуги взрослым
           <svg width="13" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="m11.346 1-5 4-5-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>

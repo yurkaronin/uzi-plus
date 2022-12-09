@@ -44,7 +44,7 @@
       <!-- логотип  -->
       <div class="header__logo">
         <a href="#">
-          <img src="./img/logo/logo.svg" alt="Логотип Узи+" width="177">
+          <img src="./img/logo/logo.svg" alt="Логотип УЗИ+" width="177">
         </a>
 
       </div>
