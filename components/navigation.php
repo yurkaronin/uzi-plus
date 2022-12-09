@@ -2,7 +2,7 @@
   <div class="wrapper">
 
     <ul class="navigation__list">
-      <li><a class="navigation__link" href="#">Главная</a></li>
+      <li><a class="navigation__link" href="./index.php">Главная</a></li>
 
       <li><a class="navigation__link navigation__link--mod" href="#">Услуги детям
           <svg width="13" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +75,7 @@
         <a class="navigation__link" href="#">Отзывы</a>
       </li>
       <li>
-        <a class="navigation__link" href="#">Контакты</a>
+        <a class="navigation__link" href="./contacts.php">Контакты</a>
       </li>
     </ul>
 

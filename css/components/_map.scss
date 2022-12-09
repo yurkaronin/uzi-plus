@@ -1,0 +1,20 @@
+.map {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  &__content {
+    height: 520px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      height: 320px;
+    }
+  }
+}
+
+/** dealer-detail */
+[class*="copyrights-pane"] {
+  display: none !important;
+}

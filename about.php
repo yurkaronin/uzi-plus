@@ -9,7 +9,7 @@ include "./components/header.php";
       <!-- хлебные крошки  -->
       <ul class="breadcrumbs">
         <li>Вы здесь:<a href="./index.php"><span>Главная</span></a></li>
-        <li><a><span>Услуги</span></a></li>
+        <li><a><span>О нашей клинике</span></a></li>
       </ul>
       <!-- Главный заголовок страницы  -->
       <h1 class="title">Медицинские центры «Узи+»</h1>
@@ -93,14 +93,13 @@ include "./components/header.php";
     include "./components/photo-slider.php";
     // Промо блок 2
     include "./components/promo-3.php";
-    include "./components/director-speech.php";
+    // include "./components/director-speech.php";
     include "./components/promo-4.php";
     // Рейтинг
     include "./components/ratings.php";
     // сертификаты 
     include "./components/certificates.php";
   ?>
-
 
 </main>
 <?php 
