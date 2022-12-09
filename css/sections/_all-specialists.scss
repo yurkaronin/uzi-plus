@@ -1,0 +1,14 @@
+.all-specialists {
+  padding-top: 90px;
+  padding-bottom: 120px;
+
+  &__grid {
+    display: grid;
+    gap: 96px;
+    grid-template-columns: 1fr;
+  }
+  .service-preview {
+    margin-bottom: 80px;
+  }
+}
+

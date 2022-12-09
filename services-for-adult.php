@@ -16,7 +16,8 @@ include "./components/header.php";
       <div class="service-item__grid">
         <div class="service-item__left">
           <h2 class="service-item__title">Услуги для взрослых</h2>
-          <p class="service-item__text">В МЦ «УЗИ+» представлен широкий спектр медицинских услуг, которые позволяют провести диагностику различных заболеваний и назначить лечение взрослым пациентам</p>
+          <p class="service-item__text">В МЦ «УЗИ+» представлен широкий спектр медицинских услуг, которые позволяют
+            провести диагностику различных заболеваний и назначить лечение взрослым пациентам</p>
         </div>
         <div class="service-item__right">
           <div class="service-item__image">
@@ -42,9 +43,9 @@ include "./components/header.php";
           <div class="catalog-preview__left">
             <div class="catalog-preview__hgroup">
               <span class="catalog-preview__id">№ 721</span>
-            <h3 class="catalog-preview__title">Узи сердца</h3>
+              <h3 class="catalog-preview__title">Узи сердца</h3>
             </div>
-            
+
             <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
               показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
               рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
@@ -64,6 +65,11 @@ include "./components/header.php";
       </div>
     </div>
   </section>
+  <?php 
+      // Промо блок 2
+      include "./components/promo-3.php";
+    ?>
+
   <section class="section">
     <div class="wrapper">
       <h2 class="title">Заголовок второго уровня для поисковиков</h2>

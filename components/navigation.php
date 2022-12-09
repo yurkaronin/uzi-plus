@@ -58,7 +58,7 @@
           <li><a href="#">Сосудистая хирургия</a></li>
           <li><a href="#">Терапия</a></li>
           <li><a href="#">Травматология-ортопедия</a></li>
-          <li><a href="#">Ультразвуковая диагностика</a></li>
+          <li><a href="./service-adult-uzy.php">Ультразвуковая диагностика</a></li>
           <li><a href="#">Урология</a></li>
           <li><a href="#">Функциональная диагностика</a></li>
           <li><a href="#">Хирургия</a></li>
@@ -66,7 +66,7 @@
         </ul>
       </li>
       <li>
-        <a class="navigation__link" href="#">Специалисты</a>
+        <a class="navigation__link" href="./all-specialists.php">Специалисты</a>
       </li>
       <li>
         <a class="navigation__link" href="#">Цены</a>

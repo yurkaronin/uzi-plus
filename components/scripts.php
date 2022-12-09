@@ -1,4 +1,5 @@
 <script src="./libs/swiper-bundle.min.js"></script>
+<script src="./libs/itc-custom-select.js"></script>
 <!-- модальные окна для фото с группировкой по альбомам  -->
 <script src="./libs/fancybox.umd.js"></script>
 <!-- плагин для слабовидящих  -->

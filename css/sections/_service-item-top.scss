@@ -9,6 +9,10 @@
   gap: 32px;
   justify-content: flex-start;
   }
+  &__right {
+    display: flex;
+    margin-top: auto;
+  }
 
   &__title {
     font-weight: 500;

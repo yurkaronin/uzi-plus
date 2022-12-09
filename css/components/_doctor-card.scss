@@ -1,0 +1,9 @@
+.doctor-card {
+  &__grid {
+    display: grid;
+    gap: 115px;
+    grid-template-columns: 447px 1fr;
+    background-color: var(--White);
+    align-items: flex-start;
+}
+}

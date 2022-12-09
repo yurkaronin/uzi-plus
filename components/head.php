@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="./libs/normalize.min.css">
   <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./libs/itc-custom-select.css">
   <!-- модальные окна для фото с группировкой по альбомам  -->
   <link rel="stylesheet" href="./libs/fancybox.css">
   <!-- плагин для слабовидящих -->

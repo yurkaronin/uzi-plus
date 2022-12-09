@@ -103,7 +103,6 @@ include "./components/header.php";
     // Промо блок 2
     include "./components/promo-3.php";
     // include "./components/director-speech.php";
-    include "./components/promo-4.php";
     // Рейтинг
     include "./components/ratings.php";
     // сертификаты 
