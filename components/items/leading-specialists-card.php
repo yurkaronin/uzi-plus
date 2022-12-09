@@ -29,13 +29,6 @@
         </ul>
       </div>
       <div class="buttons">
-        <a href="#" class="button button--icon"><svg width="13" height="20" viewBox="0 0 13 20" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0.409484 0.470069C0.978302 -0.132209 1.92766 -0.159333 2.52994 0.409484L12.6846 10L2.52994 19.5905C1.92766 20.1593 0.978302 20.1322 0.409484 19.5299C-0.159333 18.9277 -0.132209 17.9783 0.470069 17.4095L8.3154 10L0.470069 2.59052C-0.132209 2.02171 -0.159333 1.07235 0.409484 0.470069Z"
-              fill="black" />
-          </svg>
-          Подробнее</a>
         <a href="#" class="button button--icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
