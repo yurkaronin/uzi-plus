@@ -32,7 +32,7 @@ include "./components/header.php";
                     fill="#41E1BB" />
                 </svg>
 
-              </div><span>Удобная парковка</span>
+              </div><span>удобное расположение</span>
             </li>
             <li>
               <div class="icon">
@@ -42,7 +42,7 @@ include "./components/header.php";
                     fill="#41E1BB" />
                 </svg>
 
-              </div><span>Без перерывов и очереди</span>
+              </div><span>без перерывов и очереди</span>
             </li>
             <li>
               <div class="icon">
@@ -52,7 +52,7 @@ include "./components/header.php";
                     fill="#41E1BB" />
                 </svg>
 
-              </div><span>Лечение сложных заболеваний</span>
+              </div><span>современные методы диагностики</span>
             </li>
             <li>
               <div class="icon">
@@ -62,7 +62,7 @@ include "./components/header.php";
                     fill="#41E1BB" />
                 </svg>
 
-              </div><span>Работаем без выходных</span>
+              </div><span>квалифицированные специалисты</span>
             </li>
           </ul>
         </div>
