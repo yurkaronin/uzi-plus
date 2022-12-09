@@ -1,33 +1,33 @@
 // Главный слайдер с акциями
 const sliderHero = new Swiper(".slider-hero", {
   loop: true,
-  speed: 1400,
-  autoplay: {
-    delay: 4000,
-  },
+  // speed: 1400,
+  // autoplay: {
+  //   delay: 4000,
+  // },
   pagination: {
     el: ".slider-hero .swiper-pagination",
     clickable: true,
   },
-  effect: "creative",
-  creativeEffect: {
-    prev: {
-      shadow: true,
-      translate: ["-20%", 0, -1],
-    },
-    next: {
-      translate: ["100%", 0, 0],
-    },
-  },
+  // effect: "creative",
+  // creativeEffect: {
+  //   prev: {
+  //     shadow: true,
+  //     translate: ["-20%", 0, -1],
+  //   },
+  //   next: {
+  //     translate: ["100%", 0, 0],
+  //   },
+  // },
 });
 
 // Ведущие специалисты
 const leadingSpecialists = new Swiper(".leading-specialists .swiper", {
   loop: true,
   speed: 1400,
-  autoplay: {
-    delay: 4000,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  // },
   slidesPerView: 1,
   spaceBetween: 64,
   pagination: {
