@@ -766,6 +766,9 @@ input[type=radio].visually-hidden {
   text-decoration: underline;
 }
 @media (max-width: 1400px) {
+  .filial {
+    margin-bottom: 60px;
+  }
   .filial__details {
     padding: 40px 45px;
   }
@@ -2832,6 +2835,10 @@ input[type=radio].visually-hidden {
     height: 100%;
     object-fit: cover;
   }
+}
+
+.catalog {
+  background-color: var(--gray3);
 }
 
 @keyframes show-header {
