@@ -13,6 +13,7 @@
     align-items: center;
     width: 100%;
     cursor: pointer;
+    position: relative;
 
     svg {
       pointer-events: none;
@@ -22,6 +23,27 @@
       transition: all 0.3s;
       transform: rotate(0);
       transform-origin: center;
+    }
+
+    &--catalog {
+      padding-left: 135px;
+      border-radius: 0;
+      overflow: hidden;
+
+      .catalog-nav__icon {
+        pointer-events: none;
+        border-radius: 0 70px 70px 0;
+      }
+      span {
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 18px;
+
+        strong {
+          text-transform: uppercase;
+          display: block;
+        }
+      }
     }
   }
   &__title {
@@ -92,6 +114,5 @@
     &__title {
       font-size: 18px;
     }
-
   }
 }

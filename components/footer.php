@@ -42,6 +42,9 @@
             <li>
               <a href="./about.php">О клинике</a>
             </li>
+            <li>
+              <a href="./catalog.php">Каталог услуг</a>
+            </li>
           </ul>
         </div>
 

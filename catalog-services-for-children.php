@@ -8,19 +8,13 @@ include "./components/header.php";
     <div class="wrapper">
       <ul class="breadcrumbs">
         <li>Вы здесь:<a href="./index.php"><span>Главная</span></a></li>
-        <li><a><span>Все услуги</span></a></li>
+        <li><a href="./catalog.php"><span>Все услуги</span></a></li>
+        <li><a><span>Услуги для детей</span></a></li>
       </ul>
-      <h2 class="title">Основные направления</h2>
+      <h2 class="title">Услуги для детей</h2>
 
       <div class="description">
-        <p class="lead">Клиника «Узи+» – это частное многопрофильное медицинское учреждение в Смоленске. Оказываем
-          широкий спектр диагностических услуг. Наше профильное направление это узи-диагностика. Услуги нашего
-          медицинского центра оказываются как взрослым, так и детям.</p>
-
-        <p>Работаем по европейским стандартам диагностики и лечения заболеваний. Заботимся о высоком качестве
-          предоставляемых услуг, поэтому в центре работают только опытные дипломированные врачи, имеется все необходимое
-          современное диагностическое оборудование от ведущих мировых производителей. Обеспечивается индивидуальный
-          подход к решению проблем здоровья каждого пациента.</p>
+        <p class="lead">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </div>
       <br>
       <br>
@@ -70,7 +64,7 @@ include "./components/header.php";
     include "./components/benefits.php";
   ?>
 
-  <section class="catalog">
+  <section class="catalog section">
     <div class="wrapper">
       <div class="catalog__grid">
         <div class="catalog__menu">
