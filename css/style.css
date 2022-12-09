@@ -855,6 +855,135 @@ input[type=radio].visually-hidden {
   align-items: flex-start;
 }
 
+.all-reviews__list {
+  display: grid;
+  gap: 72px;
+  grid-template-columns: 1fr;
+}
+.all-reviews__lead {
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.review-item__grid {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  gap: 32px;
+  align-items: flex-start;
+}
+.review-item__photo {
+  max-width: 220px;
+}
+.review-item__photo img {
+  display: block;
+  margin-bottom: 20px;
+}
+.review-item__name {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.review-item__name strong {
+  font-weight: 700;
+  display: block;
+}
+.review-item__link {
+  font-size: 18px;
+  line-height: 1.4;
+  text-decoration-line: underline;
+  color: #018079;
+  max-width: 220px;
+  display: table;
+}
+.review-item__link img {
+  display: block;
+  margin-top: 16px;
+}
+.review-item__place ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.review-item__place ul li {
+  margin-bottom: 0.5em;
+}
+.review-item__place ul li:last-child {
+  margin-bottom: 0;
+}
+.review-item__blockquote {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  color: #000000;
+  padding: 40px 70px 45px 50px;
+  background: #f5f5f5;
+  border-radius: 0 60px 60px 60px;
+}
+
+.center-button {
+  max-width: max-content;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .review-item__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .review-item__left {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    gap: 16px;
+  }
+  .review-item__photo {
+    margin: 0;
+  }
+  .review-item__photo img {
+    max-width: initial;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .review-item__link {
+    font-size: 14px;
+  }
+  .review-item__link img {
+    margin-top: 6px;
+    max-width: 50px;
+  }
+  .review-item__right {
+    order: -1;
+  }
+  .review-item__blockquote {
+    font-size: 16px;
+    padding: 28px 45px;
+  }
+}
+@media (max-width: 550px) {
+  .review-item__grid {
+    gap: 0;
+  }
+  .review-item__left {
+    display: block;
+  }
+  .review-item__name {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .review-item__blockquote {
+    padding: 28px 30px;
+  }
+  .review-item__left {
+    margin-top: -22px;
+  }
+}
 .header {
   background-color: var(--White);
   color: var(--Black);

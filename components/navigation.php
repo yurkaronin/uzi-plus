@@ -72,7 +72,7 @@
         <a class="navigation__link" href="#">Цены</a>
       </li>
       <li>
-        <a class="navigation__link" href="#">Отзывы</a>
+        <a class="navigation__link" href="./all-reviews.php">Отзывы</a>
       </li>
       <li>
         <a class="navigation__link" href="./contacts.php">Контакты</a>
