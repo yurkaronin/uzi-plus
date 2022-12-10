@@ -69,7 +69,19 @@
         <a class="navigation__link" href="./all-specialists.php">Специалисты</a>
       </li>
       <li>
-        <a class="navigation__link" href="#">Цены</a>
+        <a class="navigation__link navigation__link--mod" href="./all-prices.php">Цены
+        <svg width="13" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.346 1-5 4-5-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <ul class="navigation__sublist navigation__sublist--mod">
+          <li><a href="./prices-ultrasound-for-adults.php">Ультразвуковые исследования для взрослых</a></li>
+          <li><a href="./prices-ultrasound-for-children.php">Ультразвуковые исследования для детей</a></li>
+          <li><a href="./prices-expert-advice.php">Консультация специалистов</a></li>
+          <li><a href="./prices-consultation-pediatric-specialists.php">Консультация детских специалистов</a></li>
+          <li><a href="./prices-obstetrics-and-gynecology.php">Акушерство и гинекология</a></li>
+          <li><a href="./prices-sampling.php">Забор анализов</a></li>
+        </ul>
       </li>
       <li>
         <a class="navigation__link" href="./all-reviews.php">Отзывы</a>

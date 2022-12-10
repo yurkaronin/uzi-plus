@@ -1277,6 +1277,9 @@ ul:not([class]) li a {
   flex-wrap: wrap;
   transition: all 0.3s;
 }
+.navigation__sublist--mod {
+  height: max-content;
+}
 .navigation__sublist a {
   font-weight: 500;
   font-size: 18px;
@@ -3573,4 +3576,21 @@ ul:not([class]) li a {
   .hide-768 {
     display: none;
   }
+}
+table {
+  border-collapse: collapse;
+}
+table td {
+  border: 1px solid #000000;
+  font-size: 14px;
+  padding: 0.3em;
+}
+table th td {
+  font-weight: 600;
+  border: none;
+}
+table thead th {
+  font-weight: 400;
+  border: 1px solid #000000;
+  font-size: 14px;
 }
