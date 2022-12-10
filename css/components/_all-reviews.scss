@@ -11,12 +11,11 @@
 }
 
 .review-item {
-  &__grid {
-    display: grid;
-    grid-template-columns: 3fr 9fr;
-    gap: 32px;
-    align-items: flex-start;
-  }
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  gap: 32px;
+  align-items: flex-start;
+
   &__photo {
     max-width: 220px;
     img {
@@ -24,7 +23,7 @@
       margin-bottom: 20px;
     }
   }
-  &__name {
+  p {
     display: block;
     margin: 0;
     margin-bottom: 20px;
@@ -64,7 +63,7 @@
       }
     }
   }
-  &__blockquote {
+  blockquote {
     font-size: 18px;
     line-height: 1.4;
     margin: 0;
@@ -73,9 +72,15 @@
     background: #f5f5f5;
     border-radius: 0 60px 60px 60px;
   }
+
+  &--simple {
+    grid-template-columns: 170px 1fr;
+  }
+  &--simple p {
+    font-size: 16px;
+  }
 }
 .center-button {
-  
   max-width: max-content;
   margin: 0 auto;
   margin-top: 64px;
@@ -113,9 +118,24 @@
   .review-item__right {
     order: -1;
   }
-  .review-item__blockquote {
+  blockquote {
     font-size: 16px;
     padding: 28px 45px;
+  }
+
+  .review-item--simple {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .review-item--simple .review-item__left {
+    display: block;
+    margin-top: -35px;
+  }
+
+  .review-item--simple blockquote {
+    padding: 40px 30px;
+    font-size: 16px;
+    display: table;
   }
 }
 
@@ -126,11 +146,11 @@
   .review-item__left {
     display: block;
   }
-  .review-item__name {
+  p {
     margin-bottom: 10px;
     font-size: 16px;
   }
-  .review-item__blockquote {
+  blockquote {
     padding: 28px 30px;
   }
   .review-item__left {

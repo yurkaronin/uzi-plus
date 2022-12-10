@@ -115,9 +115,9 @@
       <div class="footer__grid">
         <div class="footer__item">
           <ul class="footer__links-list">
-            <li><a href="#">Карта сайта</a></li>
-            <li><a href="#">Обработка персональных данных</a></li>
-            <li><a href="#">Пользовательское соглашение</a></li>
+            <!-- <li><a href="#">Карта сайта</a></li> -->
+            <li><a href="./documentation/files/confident.pdf" target="_blank">Обработка персональных данных</a></li>
+            <li><a href="./doc-user-agreement.php" target="_blank">Пользовательское соглашение</a></li>
           </ul>
 
         </div>
@@ -138,14 +138,13 @@
     <div class="wrapper">
       <div class="footer__grid">
         <div class="footer__item">
-          <p class="footer__copy">© УЗИ+ 2007-2022 ООО "МЦ "УЗИ+", г. Смоленск, ул. Попова, д. 68.<br>
-            Лицензия № ЛО 67-01-001392 от 21.12.2018. Любое копирование материалов сайта без указания источника
-            запрещена, <br>
-            согласно 4ч, раздел 7 Гражданского Кодекса РФ.</p>
+          <p class="footer__copy">© УЗИ+ 2012-2022 ООО "МЦ "УЗИ+", г. Смоленск, ул. Попова, д. 68. 
+            Лицензия № ЛО 67-01-001392 от 21.12.2018. <a href="./normative-documents.php" target="_blank">Нормативные документы</a>.<br>
+            Любое копирование материалов сайта без указания источника запрещена, согласно 4ч, раздел 7 Гражданского Кодекса РФ.</p>
         </div>
         <div class="footer__item">
           <div class="footer__developers-link">
-            <a href="#">Разработчик сайта: <br> Юрий Савченко</a>
+            <a href="https://t.me/Yuriy_Ronin" target="_blank">Разработка и продвижение сайта: ИП Савченко Юрий Игоревич</a>
           </div>
         </div>
       </div>
