@@ -1,4 +1,5 @@
 <?php
+require_once('config.php');
 // переменные 
 $page_name = "";
 $page_desc = "";
