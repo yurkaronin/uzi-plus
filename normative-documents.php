@@ -1,7 +1,11 @@
 <?php
-include "./components/head.php";
-include "./components/up-button.php";
-include "./components/header.php";
+// переменные 
+$page_name = "";
+$page_desc = "";
+$seo_title;
+$seo_text;
+include "./templates/_head.php";
+include "./templates/_header.php";
 ?>
 <main>
   <section class="section">
@@ -115,7 +119,7 @@ include "./components/header.php";
   </section>
   <section class="section section--gray">
     <div class="wrapper">
-    <h2>Контактная информация надзорных органов</h2>
+      <h2>Контактная информация надзорных органов</h2>
       <ul>
 
         <li>
@@ -158,16 +162,14 @@ include "./components/header.php";
     </div>
   </section>
 
-  <?php 
-      // Промо блок 2
-      include "./components/promo-3.php";
-    ?>
+  <?php include "./components/promo-3.php"; ?>
+  <?php if($seo_title && $seo_text) :  ?>
+  <section class="section">
+    <div class="wrapper">
+      <h2 class="title"><?php echo $seo_title; ?></h2>
+      <?php echo $seo_text; ?>
+    </div>
+  </section>
+  <?php endif; ?>
 
-</main>
-<?php 
-  include "./components/footer.php";
-  include "./components/scripts.php"; 
-  ?>
-</body>
-
-</html>
+  <?php include "./templates/_footer.php"; ?>

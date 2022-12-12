@@ -1,3 +1,4 @@
+</main>
 <footer class="footer">
   <div class="footer__top">
     <div class="wrapper">
@@ -138,13 +139,16 @@
     <div class="wrapper">
       <div class="footer__grid">
         <div class="footer__item">
-          <p class="footer__copy">© УЗИ+ 2012-2022 ООО "МЦ "УЗИ+", г. Смоленск, ул. Попова, д. 68. 
-            Лицензия № ЛО 67-01-001392 от 21.12.2018. <a href="./normative-documents.php" target="_blank">Нормативные документы</a>.<br>
-            Любое копирование материалов сайта без указания источника запрещена, согласно 4ч, раздел 7 Гражданского Кодекса РФ.</p>
+          <p class="footer__copy">© УЗИ+ 2012-2022 ООО "МЦ "УЗИ+", г. Смоленск, ул. Попова, д. 68.
+            Лицензия № ЛО 67-01-001392 от 21.12.2018. <a href="./normative-documents.php" target="_blank">Нормативные
+              документы</a>.<br>
+            Любое копирование материалов сайта без указания источника запрещена, согласно 4ч, раздел 7 Гражданского
+            Кодекса РФ.</p>
         </div>
         <div class="footer__item">
           <div class="footer__developers-link">
-            <a href="https://t.me/Yuriy_Ronin" target="_blank">Разработка и продвижение сайта: ИП Савченко Юрий Игоревич</a>
+            <a href="https://t.me/Yuriy_Ronin" target="_blank">Разработка и продвижение сайта: ИП Савченко Юрий
+              Игоревич</a>
           </div>
         </div>
       </div>
@@ -152,3 +156,28 @@
   </div>
 
 </footer>
+<!-- Мобильный блок с двумя ссылками  -->
+<div class="navigation-mobile">
+  <a href="#" class="button"><span>Записаться</span></a>
+  <a href="#" class="button"><span>Задать вопрос</span></a>
+</div>
+<!-- Кнопка прокрутки наверх  -->
+<a href="#top" id="toTop" title="Наверх" class="top-button">
+  <svg width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10.625 25L10.625 2M2 10.625L10.625 2L19.25 10.625" stroke="black" stroke-width="4" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </svg>
+</a>
+
+</body>
+<!-- Скрипты  -->
+<script src="./libs/swiper-bundle.min.js"></script>
+<script src="./libs/itc-custom-select.js"></script>
+<script src="./libs/fancybox.umd.js"></script>
+<script src="./libs/bvi.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=1dba075a-a65a-4b22-84a2-ebb26f26fe43&lang=ru_RU"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+  integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
+</html>

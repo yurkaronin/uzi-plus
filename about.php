@@ -1,6 +1,10 @@
 <?php
+// переменные 
+$page_name = 'О медицинском центре УЗИ +';
+$page_desc = 'Подробная информация о Медицинском центре УЗИ + в Смоленске.';
+$seo_title;
+$seo_text;
 include "./components/head.php";
-include "./components/up-button.php";
 include "./components/header.php";
 ?>
 <main class="inner-page">
@@ -9,10 +13,10 @@ include "./components/header.php";
       <!-- хлебные крошки  -->
       <ul class="breadcrumbs">
         <li>Вы здесь:<a href="./index.php"><span>Главная</span></a></li>
-        <li><a><span>О нашей клинике</span></a></li>
+        <li><a><span><?php echo $user_name; ?></span></a></li>
       </ul>
       <!-- Главный заголовок страницы  -->
-      <h1 class="title">Медицинские центры «УЗИ+»</h1>
+      <h1 class="title"><?php echo $user_name; ?></h1>
 
       <!-- фото с преимуществами  -->
       <div class="photo-benefits">
@@ -109,13 +113,13 @@ include "./components/header.php";
     include "./components/certificates.php";
   ?>
 
-</main>
-<?php 
-  // подвал 
-  include "./components/footer.php";
-  // скрипты 
-  include "./components/scripts.php"; 
-  ?>
-</body>
+  <?php if($seo_title && $seo_text) :  ?>
+  <section class="section">
+    <div class="wrapper">
+      <h2 class="title"><?php echo $seo_title; ?></h2>
+      <?php echo $seo_text; ?>
+    </div>
+  </section>
+  <?php endif; ?>
 
-</html>
+  <?php include "./templates/_footer.php"; ?>

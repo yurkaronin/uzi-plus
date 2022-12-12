@@ -1,7 +1,11 @@
 <?php
-include "./components/head.php";
-include "./components/up-button.php";
-include "./components/header.php";
+// переменные 
+$page_name = "";
+$page_desc = "";
+$seo_title;
+$seo_text;
+include "./templates/_head.php";
+include "./templates/_header.php";
 ?>
 <main>
   <section class="service-item section">
@@ -17,7 +21,8 @@ include "./components/header.php";
       <div class="service-item__grid">
         <div class="service-item__left">
           <h2 class="service-item__title">Ультразвуковая диагностика для взрослых</h2>
-          <p class="service-item__text">Ультразвуковое исследование (УЗИ) – диагностическая методика, которая основана на визуализации структур организма с помощью ультразвуковых волн.</p>
+          <p class="service-item__text">Ультразвуковое исследование (УЗИ) – диагностическая методика, которая основана
+            на визуализации структур организма с помощью ультразвуковых волн.</p>
           <p>При выполнении УЗИ:</p>
           <ul>
             <li>не нарушается целостность кожи,</li>
@@ -75,32 +80,15 @@ include "./components/header.php";
       </div>
     </div>
   </section>
-  <?php 
-      // Промо блок 2
-      include "./components/promo-3.php";
-    ?>
+
+  <?php include "./components/promo-3.php"; ?>
+  <?php if($seo_title && $seo_text) :  ?>
   <section class="section">
     <div class="wrapper">
-      <h2 class="title">Заголовок второго уровня для поисковиков</h2>
-      <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
-        осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
-        условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется
-        абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
-        привлекательным и живым для визуально-слухового восприятия.</p>
-      <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей
-        недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит
-        любой макет непонятным смыслом
-        и придаст неповторимый колорит советских времен.</p>
+      <h2 class="title"><?php echo $seo_title; ?></h2>
+      <?php echo $seo_text; ?>
     </div>
   </section>
+  <?php endif; ?>
 
-</main>
-<?php 
-  // подвал 
-  include "./components/footer.php";
-  // скрипты 
-  include "./components/scripts.php"; 
-  ?>
-</body>
-
-</html>
+  <?php include "./templates/_footer.php"; ?>

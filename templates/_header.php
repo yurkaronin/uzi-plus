@@ -67,6 +67,6 @@
     </div>
   </div>
 
-  <?php include "./components/navigation.php";?>
+  <?php include "./templates/_navigation.php";?>
 
 </header>

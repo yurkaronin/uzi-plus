@@ -10,10 +10,10 @@ class ItcCustomSelect {
     const { name, options, targetValue } = params;
     const items = [];
     let selectedIndex = -1;
-    let selectedValue = '';
+    let selectedValue = "";
     let selectedContent = 'Выберите из списка';
     options.forEach((option, index) => {
-      let selectedClass = '';
+      let selectedClass = "";
       if (option[0] === targetValue) {
         selectedClass = ` ${this.EL_OPTION_SELECTED}`;
         selectedIndex = index;
@@ -26,7 +26,7 @@ class ItcCustomSelect {
     return `<button type="button" class="itc-select__toggle" name="${name}"
       value="${selectedValue}" data-select="toggle" data-index="${selectedIndex}">
       ${selectedContent}</button><div class="itc-select__dropdown">
-      <ul class="itc-select__options">${items.join('')}</ul></div>`;
+      <ul class="itc-select__options">${items.join("")}</ul></div>`;
   }
 
   static hideOpenSelect() {
@@ -89,11 +89,11 @@ class ItcCustomSelect {
       selected.classList.remove(this.constructor.EL_OPTION_SELECTED);
     }
     this._elToggle.textContent = 'Выберите из списка';
-    this._elToggle.value = '';
+    this._elToggle.value = "";
     this._elToggle.dataset.index = '-1';
     this._el.dispatchEvent(new CustomEvent('itc.select.change'));
     this._params.onSelected ? this._params.onSelected(this, null) : null;
-    return '';
+    return "";
   }
 
   _changeValue(el) {

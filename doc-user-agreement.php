@@ -1,7 +1,10 @@
 <?php
-include "./components/head.php";
-include "./components/up-button.php";
-include "./components/header.php";
+// переменные 
+$page_name = "";
+$page_desc = "";
+
+include "./templates/_head.php";
+include "./templates/_header.php";
 ?>
 <main>
   <section class="section">
@@ -85,11 +88,4 @@ include "./components/header.php";
     </div>
   </section>
 
-</main>
-<?php 
-  include "./components/footer.php";
-  include "./components/scripts.php"; 
-  ?>
-</body>
-
-</html>
+  <?php include "./templates/_footer.php"; ?>
