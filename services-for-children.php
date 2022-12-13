@@ -35,7 +35,7 @@ include "./templates/_header.php";
         </div>
         <div class="service-item__right">
           <div class="service-item__image">
-            <img src="./img/artwork/services/pediatr.svg" alt="изображение услуги">
+            <img src="./img/artwork/services/pediatriya.svg" alt="изображение услуги">
           </div>
 
         </div>

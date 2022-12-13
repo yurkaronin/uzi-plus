@@ -275,7 +275,6 @@ include "./templates/_header.php";
     </div>
   </section>
   
-  <?php include "./components/promo-4.php"; ?>
   <?php if($seo_title && $seo_text) :  ?>
   <section class="section">
     <div class="wrapper">
