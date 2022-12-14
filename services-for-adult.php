@@ -1,5 +1,12 @@
 <?php
 require_once('config.php');
+
+$currentServiceCat = intval($_GET['service-cat']);
+
+$sqlCat = "SELECT * FROM `service_category` WHERE id = '$currentServiceCat'";
+$resultCat = $data_base->query($sqlCat);
+$service_item = $resultCat->fetch(PDO::FETCH_ASSOC);
+
 // переменные 
 $page_name = "";
 $page_desc = "";

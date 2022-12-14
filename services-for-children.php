@@ -48,13 +48,14 @@ include "./templates/_header.php";
 
   <section class="services-group section">
     <div class="wrapper">
+
       <div class="catalog__content">
         <?php 
-          $sql = "SELECT * FROM `service` WHERE `service_category` > 23";
-          $result = $data_base->query($sql);
-          $service = $result->fetchAll(PDO::FETCH_ASSOC);
+          $sqlItems = "SELECT * FROM `service` WHERE `service_category` > 23";
+          $resultItems = $data_base->query($sqlItems);
+          $serviceItems = $resultItems->fetchAll(PDO::FETCH_ASSOC);
 
-          foreach( $service as $item) {
+          foreach( $serviceItems as $item) {
             include "./templates/_catalog-preview-item.php"; 
           };
         ?>
