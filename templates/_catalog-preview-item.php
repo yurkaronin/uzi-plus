@@ -2,7 +2,11 @@
   <div class="catalog-preview__left">
     <div class="catalog-preview__hgroup">
       <span class="catalog-preview__id">№ <?php echo$item['code']; ?></span>
-      <h3 class="catalog-preview__title"><?php echo$item['title']; ?></h3>
+      <div class="catalog-preview__title-group">
+        <span class="catalog-preview__category-name"><?php echo$service_item['title']; ?></span>
+        <h3 class="catalog-preview__title"><?php echo$item['title']; ?></h3>
+      </div>
+
     </div>
     <div class="catalog-preview__desc"><?php echo$item['text']; ?></div>
   </div>

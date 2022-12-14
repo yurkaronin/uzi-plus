@@ -8,7 +8,6 @@
         $sql = "SELECT * FROM `service_category` WHERE id > 23";
         $result = $data_base->query($sql);
         $service_preview = $result->fetchAll(PDO::FETCH_ASSOC);
-        // print_r($service_preview);
 
         foreach( $service_preview as $item) {
           include "./templates/_service-category-preview-item.php"; 

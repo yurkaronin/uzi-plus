@@ -3185,24 +3185,26 @@ ul:not([class]) li a {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 16px;
+  position: relative;
+  padding-left: 125px;
 }
 .catalog-preview--long {
   grid-template-columns: 6fr 2fr;
 }
 .catalog-preview__hgroup {
-  display: grid;
-  gap: 16px;
-  align-items: flex-start;
-  grid-template-columns: 110px 1fr;
+  display: block;
 }
 .catalog-preview__id {
   background: #41e1bb;
-  border-radius: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 22px;
   line-height: 1;
   padding: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 50px 50px 0;
 }
 .catalog-preview__title {
   display: block;
@@ -3254,6 +3256,7 @@ ul:not([class]) li a {
   }
   .catalog-preview {
     padding: 35px 55px 25px;
+    padding-left: 125px;
   }
   .catalog-preview__price {
     font-size: 16px;
@@ -3285,7 +3288,8 @@ ul:not([class]) li a {
 }
 @media (max-width: 768px) {
   .catalog-preview {
-    padding: 25px 55px 45px;
+    padding: 40px;
+    padding-top: 55px;
   }
   .catalog-preview__id {
     font-size: 14px;
@@ -3307,7 +3311,8 @@ ul:not([class]) li a {
 @media (max-width: 550px) {
   .catalog-preview {
     border-radius: 5%;
-    padding: 16px 20px;
+    padding: 16px 20px 30px;
+    padding-top: 40px;
   }
   .catalog-preview__left {
     display: block;
@@ -3322,6 +3327,9 @@ ul:not([class]) li a {
   }
   .catalog-preview__desc {
     font-size: 16px;
+  }
+  .catalog-preview__title {
+    font-size: 21px;
   }
   .catalog-nav .active + .accordion__body {
     padding: 20px;

@@ -4,81 +4,15 @@
     <p class="subtitle">В МЦ «УЗИ+» представлен широкий спектр медицинских услуг, которые позволяют провести диагностику различных заболеваний и назначить лечение взрослым пациентам</p>
 
     <ul class="service-preview__list">
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/allergologiya-immunologiya.svg" alt="">
-          </div>
-          <p class="service-preview__text">Аллергология-иммунология</p>
-        </a>
-      </li>
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/gastroenterologiya.svg" alt="">
-          </div>
-          <p class="service-preview__text">Гастроэнтерология</p>
-        </a>
-      </li>
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/kardiologiya.svg" alt="">
-          </div>
-          <p class="service-preview__text">Кардиология</p>
-        </a>
-      </li>
+    <?php 
+        $sql = "SELECT * FROM `service_category` WHERE id < 23";
+        $result = $data_base->query($sql);
+        $service_preview = $result->fetchAll(PDO::FETCH_ASSOC);
 
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/otorinolaringologiya.svg" alt="">
-          </div>
-          <p class="service-preview__text">Оториноларингология (ЛОР)</p>
-        </a>
-      </li>
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/ortopediya.svg" alt="">
-          </div>
-          <p class="service-preview__text">Ортопедия</p>
-        </a>
-      </li>
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/pediatriya.svg" alt="">
-          </div>
-          <p class="service-preview__text">Педиатрия</p>
-        </a>
-      </li>
-
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/pulmonologiya.svg" alt="">
-          </div>
-          <p class="service-preview__text">Пульмонология</p>
-        </a>
-      </li>
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/ultrazvukovaya-diagnostika.svg" alt="">
-          </div>
-          <p class="service-preview__text">Ультразвуковая диагностика</p>
-        </a>
-      </li>
-      <li class="service-preview__item">
-        <a href="#" class="service-preview__link">
-          <div class="service-preview__icon">
-            <img src="./img/services/funkcionalnaya-diagnostika.svg" alt="">
-          </div>
-          <p class="service-preview__text">Функциональная диагностика</p>
-        </a>
-      </li>
-
+        foreach( $service_preview as $item) {
+          include "./templates/_service-category-preview-item.php"; 
+        };
+      ?>
     </ul>
   </div>
 </section>
