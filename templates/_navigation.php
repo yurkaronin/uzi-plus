@@ -10,7 +10,8 @@
           </svg>
         </a>
         <ul class="navigation__sublist">
-          <li><a href="#">Акушерство-гинекология</a></li>
+          <li><a href="#">Акушерство-гинекология</a>
+          </li>
           <li><a href="#">Аллергология-иммунология</a></li>
           <li><a href="#">Гастроскопия</a></li>
           <li><a href="#">Гастроэнтерология</a></li>
@@ -70,7 +71,7 @@
       </li>
       <li>
         <a class="navigation__link navigation__link--mod" href="./all-prices.php">Цены
-        <svg width="13" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="13" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="m11.346 1-5 4-5-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </a>
