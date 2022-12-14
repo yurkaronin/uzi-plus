@@ -85,196 +85,20 @@ include "./templates/_header.php";
           ?>
         </div>
         <div class="catalog__content">
+          <?php 
+              $sql = "SELECT * FROM `service`";
+              $result = $data_base->query($sql);
+              $service = $result->fetchAll(PDO::FETCH_ASSOC);
 
-          <article class="catalog-preview">
-            <div class="catalog-preview__left">
-              <!-- заголовок  -->
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-              <!-- описание  -->
-              <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-                показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-                рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-              </p>
-            </div>
-            <div class="catalog-preview__left">
-              <!-- цена  -->
-              <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-              <!-- кнопка  -->
-              <a href="" class="button button--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                  <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-                </svg>
-                <span>Подробнее</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="catalog-preview">
-            <div class="catalog-preview__left">
-              <!-- заголовок  -->
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-              <!-- описание  -->
-              <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-                показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-                рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-              </p>
-            </div>
-            <div class="catalog-preview__left">
-              <!-- цена  -->
-              <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-              <!-- кнопка  -->
-              <a href="" class="button button--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                  <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-                </svg>
-                <span>Подробнее</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="catalog-preview">
-            <div class="catalog-preview__left">
-              <!-- заголовок  -->
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-              <!-- описание  -->
-              <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-                показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-                рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-              </p>
-            </div>
-            <div class="catalog-preview__left">
-              <!-- цена  -->
-              <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-              <!-- кнопка  -->
-              <a href="" class="button button--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                  <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-                </svg>
-                <span>Подробнее</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="catalog-preview">
-            <div class="catalog-preview__left">
-              <!-- заголовок  -->
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-              <!-- описание  -->
-              <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-                показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-                рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-              </p>
-            </div>
-            <div class="catalog-preview__left">
-              <!-- цена  -->
-              <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-              <!-- кнопка  -->
-              <a href="" class="button button--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                  <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-                </svg>
-                <span>Подробнее</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="catalog-preview">
-            <div class="catalog-preview__left">
-              <!-- заголовок  -->
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-              <!-- описание  -->
-              <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-                показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-                рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-              </p>
-            </div>
-            <div class="catalog-preview__left">
-              <!-- цена  -->
-              <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-              <!-- кнопка  -->
-              <a href="" class="button button--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                  <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-                </svg>
-                <span>Подробнее</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="catalog-preview">
-            <div class="catalog-preview__left">
-              <!-- заголовок  -->
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-              <!-- описание  -->
-              <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-                показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-                рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-              </p>
-            </div>
-            <div class="catalog-preview__left">
-              <!-- цена  -->
-              <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-              <!-- кнопка  -->
-              <a href="" class="button button--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                  <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-                </svg>
-                <span>Подробнее</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="catalog-preview">
-            <div class="catalog-preview__left">
-              <!-- заголовок  -->
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-              <!-- описание  -->
-              <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-                показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-                рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-              </p>
-            </div>
-            <div class="catalog-preview__left">
-              <!-- цена  -->
-              <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-              <!-- кнопка  -->
-              <a href="" class="button button--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                  <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-                </svg>
-                <span>Подробнее</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="catalog-preview">
-            <div class="catalog-preview__left">
-              <!-- заголовок  -->
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-              <!-- описание  -->
-              <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-                показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-                рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-              </p>
-            </div>
-            <div class="catalog-preview__left">
-              <!-- цена  -->
-              <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-              <!-- кнопка  -->
-              <a href="" class="button button--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                  <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-                </svg>
-                <span>Подробнее</span>
-              </a>
-            </div>
-          </article>
-
+              foreach( $service as $item) {
+                include "./templates/_catalog-preview-item.php"; 
+              };
+            ?>
         </div>
       </div>
     </div>
   </section>
-  
+
   <?php if($seo_title && $seo_text) :  ?>
   <section class="section">
     <div class="wrapper">

@@ -49,30 +49,15 @@ include "./templates/_header.php";
   <section class="services-group section">
     <div class="wrapper">
       <div class="catalog__content">
+        <?php 
+          $sql = "SELECT * FROM `service` WHERE `service_category` > 23";
+          $result = $data_base->query($sql);
+          $service = $result->fetchAll(PDO::FETCH_ASSOC);
 
-        <article class="catalog-preview catalog-preview--long">
-          <div class="catalog-preview__left">
-            <div class="catalog-preview__hgroup">
-              <span class="catalog-preview__id">№ 721</span>
-              <h3 class="catalog-preview__title">Узи сердца</h3>
-            </div>
-
-            <p class="catalog-preview__desc">Эхокардиография назначается терапевтом или кардиологом по
-              показаниям или после перенесенного инфаркта, а также всем детям в возрасте одного года и 14 лет в
-              рамках плановой диспансеризации. Процедура занимает 15-20 минут и не требует особой подготовки.
-            </p>
-          </div>
-          <div class="catalog-preview__left">
-            <div class="catalog-preview__price">Цена: <strong>от 1200 руб.</strong></div>
-            <a href="" class="button button--icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
-                <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
-              </svg>
-              <span>Подробнее</span>
-            </a>
-          </div>
-        </article>
-
+          foreach( $service as $item) {
+            include "./templates/_catalog-preview-item.php"; 
+          };
+        ?>
       </div>
     </div>
   </section>
