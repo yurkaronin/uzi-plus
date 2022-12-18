@@ -1,5 +1,11 @@
 <?php
 require_once('config.php');
+
+
+  $sql = "SELECT * FROM `doctors`";
+  $result = $data_base->query($sql);
+  $doctors = $result->fetchAll(PDO::FETCH_ASSOC);
+
 // переменные 
 $page_name = "";
 $page_desc = "";
@@ -205,18 +211,11 @@ include "./templates/_header.php";
       </div>
 
       <div class="all-specialists__grid">
-        <?php
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-          include "./components/items/leading-specialists-card.php";
-        ?>
+      <?php  
+        foreach( $doctors as $item) {
+        include "./templates/_leading-specialists-card.php"; 
+      };
+      ?>
       </div>
 
     </div>

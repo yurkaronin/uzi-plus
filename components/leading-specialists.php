@@ -1,16 +1,21 @@
+<?php 
+  $sql = "SELECT * FROM `doctors` WHERE id IN (1, 2, 3, 4, 5, 38)";
+  $result = $data_base->query($sql);
+  $doctors = $result->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <section class="leading-specialists section">
   <div class="wrapper">
     <h2 class="title">Ведущие специалисты</h2>
     <div class="slider">
       <div class="swiper">
         <div class="swiper-wrapper">
-          <!-- слайд  -->
-          <?php 
-          include "./components/items/leading-specialist-item.php";
-          include "./components/items/leading-specialist-item.php";
-          include "./components/items/leading-specialist-item.php";
-          
-          ?>
+
+      <?php  
+        foreach( $doctors as $item) {
+        include "./templates/_leading-specialist-item.php"; 
+      }; 
+      ?>
 
         </div>
       </div>
