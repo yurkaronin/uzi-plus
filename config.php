@@ -1,6 +1,6 @@
 <?php
 // Подключение к БД 
-$data_base = new PDO('mysql:host=localhost;dbname=uzi_plus', 'root', '');
+$data_base = new PDO('mysql:host=localhost;dbname=uzi_plus', 'root', 'root');
 // Получаем все элементы таблицы из БД 
 // $sql = "SELECT * FROM `faq`";
 // $result = $data_base->query($sql);

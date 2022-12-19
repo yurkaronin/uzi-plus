@@ -1,13 +1,24 @@
 <?php
 require_once('config.php');
 
+$currentServiceCat = intval($_GET['service-cat']);
+
+include "./templates/_head.php";
+include "./templates/_header.php";
+$sql = "SELECT * FROM `service_category` WHERE id = '$currentServiceCat'";
+$result = $data_base->query($sql);
+$service = $result->fetch(PDO::FETCH_ASSOC);
+
+$sql_two = "SELECT * FROM `service` WHERE service_category = '$currentServiceCat'";
+$result_two = $data_base->query($sql_two);
+$service_two = $result_two->fetchAll(PDO::FETCH_ASSOC);
+
+// var_dump($service);
 // переменные 
 $page_name = "";
 $page_desc = "";
-$seo_title;
-$seo_text;
-include "./templates/_head.php";
-include "./templates/_header.php";
+$seo_title = $service['title'];
+$seo_text = $service['article'];
 
 ?>
 <main>
@@ -18,22 +29,18 @@ include "./templates/_header.php";
         <li>Вы здесь:<a href="./index.php"><span>Главная</span></a></li>
         <li><a href="./catalog.php"><span>Все услуги</span></a></li>
         <li><a href="./catalog.php"><span>Услуги для детей</span></a></li>
-        <li><a><span><?php echo $service_item['title']; ?></span></a></li>
+        <li><a><span><?php echo $service['title']; ?></span></a></li>
       </ul>
 
       <!-- первый блок  -->
       <div class="service-item__grid">
         <div class="service-item__left">
-          <h2 class="service-item__title"><?php echo $service_item['title']; ?></h2>
-          <p class="service-item__text">МЦ "УЗИ+" проводит широкий спектр обследований взрослых и детей. На помощь узким
-            специалистам приходит ультразвуковое исследование (УЗИ) внутренних органов.
-            УЗИ – один из самых безопасных и информативных методов диагностики.</p>
-          <p>В МЦ "УЗИ+" работает слаженная команда опытных врачей ультразвуковой диагностики. Средний опыт работы
-            специалистов - более 20 лет.</p>
+          <h2 class="service-item__title"><?php echo $service['title']; ?></h2>
+          <p class="service-item__text"><?php echo $service['lead']; ?></p>
         </div>
         <div class="service-item__right">
           <div class="service-item__image">
-            <img src="<?php echo $service_item['image']; ?>" alt="изображение услуги">
+            <img src="<?php echo $service['image']; ?>" alt="изображение услуги">
           </div>
 
         </div>
@@ -52,13 +59,31 @@ include "./templates/_header.php";
       <div class="catalog__content">
 
         <?php 
+          foreach( $service_two as $item) {
+            ?>
+        <article class="catalog-preview catalog-preview--long">
+          <div class="catalog-preview__left">
+            <div class="catalog-preview__hgroup">
+              <span class="catalog-preview__id">№ <?php echo$item['code']; ?></span>
+              <div class="catalog-preview__title-group">
+                <span class="catalog-preview__category-name"><?php echo $service_item['name']; ?></span>
+                <h3 class="catalog-preview__title"><?php echo $item['name']; ?></h3>
+              </div>
 
-          $sqlItems = "SELECT * FROM `service` WHERE `service_category` = '$currentServiceCat'";
-          $resultItems = $data_base->query($sqlItems);
-          $serviceItems = $resultItems->fetchAll(PDO::FETCH_ASSOC);
-
-          foreach( $serviceItems as $item) {
-            include "./templates/_catalog-preview-item.php";
+            </div>
+            <div class="catalog-preview__desc"><?php echo $item['text']; ?></div>
+          </div>
+          <div class="catalog-preview__left">
+            <div class="catalog-preview__price">Цена: <strong><?php echo $item['price']; ?> руб.</strong></div>
+            <a href="" class="button button--icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none">
+                <path stroke="#000000" stroke-linecap="round" stroke-width="3" d="m2 1.5 9 8.5-9 8.5"></path>
+              </svg>
+              <span>Записаться</span>
+            </a>
+          </div>
+        </article>
+        <?
           };
         ?>
 
