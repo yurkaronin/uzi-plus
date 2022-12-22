@@ -36,7 +36,15 @@ $seo_text = $service['article'];
       <div class="service-item__grid">
         <div class="service-item__left">
           <h2 class="service-item__title"><?php echo $service['title']; ?></h2>
-          <p class="service-item__text"><?php echo $service['lead']; ?></p>
+          <p class="service-item__text"><?php 
+
+          if($service['lead'] == NULL) {
+            print('Медицинский центр «УЗИ +» - одна из первых частных поликлиник г. Смоленска для детей и взрослых. За 4 года существования мы выросли из кабинета ультразвуковой диагностики до полноценного многопрофильного медицинского центра с квалифицированным штатом сотрудников. В нашей клинике женщины и мужчины, а также их дети могут пройти полное комплексное медицинское обследование. Так что, если вы задались вопросом "Где сделать УЗИ в Смоленске?", ответ простой: "Добро пожаловать к нам!"');
+          } else {
+            echo $service['lead'];
+          };
+          ?>
+          </p>
         </div>
         <div class="service-item__right">
           <div class="service-item__image">

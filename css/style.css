@@ -1265,7 +1265,7 @@ ul:not([class]) li a {
   left: 0;
   top: 100%;
   width: 650px;
-  height: 525px;
+  max-height: 525px;
   padding: 45px 60px 50px;
   background: var(--White);
   color: var(--Black);
@@ -1345,7 +1345,7 @@ ul:not([class]) li a {
   }
   .navigation__sublist {
     width: 525px;
-    height: 465px;
+    max-height: 465px;
     padding: 16px 32px 42px;
     gap: 12px 26px;
   }
@@ -1393,7 +1393,7 @@ ul:not([class]) li a {
     margin: 0;
     padding: 0;
     width: initial;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     border-radius: 0;
     transition: all 0.3s;
@@ -3515,7 +3515,7 @@ ul:not([class]) li a {
 
 @media (max-width: 768px) {
   .active .navigation__sublist {
-    height: initial;
+    max-height: initial;
   }
 }
 .active .navigation__link {

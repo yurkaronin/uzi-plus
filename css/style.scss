@@ -47,7 +47,7 @@
 .active {
   @media (max-width: 768px) {
     .navigation__sublist {
-      height: initial;
+      max-height: initial;
     }
   }
 

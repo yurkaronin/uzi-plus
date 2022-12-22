@@ -10,28 +10,15 @@
           </svg>
         </a>
         <ul class="navigation__sublist">
-          <li><a href="#">Акушерство-гинекология</a>
-          </li>
-          <li><a href="#">Аллергология-иммунология</a></li>
-          <li><a href="#">Гастроскопия</a></li>
-          <li><a href="#">Гастроэнтерология</a></li>
-          <li><a href="#">Кардиология</a></li>
-          <li><a href="#">Неврология</a></li>
-          <li><a href="#">Онкология-маммология</a></li>
-          <li><a href="#">Ортопедия</a></li>
-          <li><a href="#">Оториноларингология</a></li>
-          <li><a href="#">Педиатрия</a></li>
-          <li><a href="#">Психиатрия-наркология</a></li>
-          <li><a href="#">Пульмонология</a></li>
-          <li><a href="#">Ревматология</a></li>
-          <li><a href="#">Сосудистая хирургия</a></li>
-          <li><a href="#">Терапия</a></li>
-          <li><a href="#">Травматология-ортопедия</a></li>
-          <li><a href="./service-children-uzy.php">Ультразвуковая диагностика</a></li>
-          <li><a href="#">Урология</a></li>
-          <li><a href="#">Функциональная диагностика</a></li>
-          <li><a href="#">Хирургия</a></li>
-          <li><a href="#">Эндокринология</a></li>
+        <?php 
+          foreach( $category_children as $item) {
+            ?>
+            <li><a href="service-item-page.php?service-cat=<?php echo $item['id']; ?>"><?php echo $item['title']; ?></a></li>
+            <?php 
+            }
+        ?>
+          
+          
         </ul>
 
       </li>
@@ -43,27 +30,13 @@
           </svg>
         </a>
         <ul class="navigation__sublist">
-          <li><a href="#">Акушерство-гинекология</a></li>
-          <li><a href="#">Аллергология-иммунология</a></li>
-          <li><a href="#">Гастроскопия</a></li>
-          <li><a href="#">Гастроэнтерология</a></li>
-          <li><a href="#">Кардиология</a></li>
-          <li><a href="#">Неврология</a></li>
-          <li><a href="#">Онкология-маммология</a></li>
-          <li><a href="#">Ортопедия</a></li>
-          <li><a href="#">Оториноларингология</a></li>
-          <li><a href="#">Педиатрия</a></li>
-          <li><a href="#">Психиатрия-наркология</a></li>
-          <li><a href="#">Пульмонология</a></li>
-          <li><a href="#">Ревматология</a></li>
-          <li><a href="#">Сосудистая хирургия</a></li>
-          <li><a href="#">Терапия</a></li>
-          <li><a href="#">Травматология-ортопедия</a></li>
-          <li><a href="./service-adult-uzy.php">Ультразвуковая диагностика</a></li>
-          <li><a href="#">Урология</a></li>
-          <li><a href="#">Функциональная диагностика</a></li>
-          <li><a href="#">Хирургия</a></li>
-          <li><a href="#">Эндокринология</a></li>
+        <?php 
+          foreach( $category_adult as $item) {
+            ?>
+            <li><a href="service-item-page.php?service-cat=<?php echo $item['id']; ?>"><?php echo $item['title']; ?></a></li>
+            <?php 
+            }
+        ?>
         </ul>
       </li>
       <li>
