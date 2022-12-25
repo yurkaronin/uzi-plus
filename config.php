@@ -1,6 +1,6 @@
 <?php
 // Подключение к БД 
-$data_base = new PDO('mysql:host=localhost;dbname=uzi_plus', 'root', 'root');
+$data_base = new PDO('mysql:host=localhost;dbname=uzi_plus', 'root', '');
 
 // Запросы к БД 
 // Получаем список категорий для детей

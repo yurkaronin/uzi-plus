@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   includeFiles("./js/parts/sliders.js");
   includeFiles("./js/parts/accordion.js");
   includeFiles("./js/parts/yandex.map.js");
+  includeFiles("./js/parts/buttons.js");
   // показываем меню при клике по кнопке
   menuButton.addEventListener('click', function () {
     // узнаём высоту шапки
