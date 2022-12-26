@@ -306,33 +306,18 @@ input[type=radio].visually-hidden {
   position: relative;
   overflow: hidden;
 }
-.ripple:nth-child(1) {
-  background-color: red;
-}
-.ripple:nth-child(2) {
-  background-color: green;
-}
-.ripple .dec {
-  position: absolute;
-  border-radius: 50%;
-  background: blue;
-  transform: translate(-50%, -50%);
+.ripple span {
+  position: relative;
+  z-index: 2;
   pointer-events: none;
-  animation: animate 1s linear infinite;
+}
+.ripple:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
 }
 
-@keyframes animate {
-  from {
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-  to {
-    width: 500px;
-    height: 500px;
-    opacity: 1;
-  }
-}
 .title {
   font-size: 50px;
   font-weight: 500;

@@ -3,9 +3,9 @@
     <div class="left">
       <div class="photo">
         <?php if($item['photo']) :  ?>
-          <img src="<?php echo$item['photo']; ?>" alt="<?php echo$item['name']; ?>" width="448">
+        <img src="<?php echo$item['photo']; ?>" alt="<?php echo$item['name']; ?>" width="448">
         <?php else:  ?>
-          <img src="./img/people/temporary-photo.jpg" alt="<?php echo$item['name']; ?>" width="448">
+        <img src="./img/people/temporary-photo.jpg" alt="<?php echo$item['name']; ?>" width="448">
         <?php endif; ?>
       </div>
       <span class="name"><?php echo$item['name']; ?></span>
@@ -17,25 +17,25 @@
       <?php endif; ?>
       <div class="text">
         <ul>
-          <li><strong>Где принимает:</strong> все филиалы</li>
-          <?php if($item['specialization']) :  ?>
-          <li><?php echo$item['specialization']; ?></li>
+          <li><strong>Где принимает:</strong>
+            <?php if($item['gagarina_place']) :  ?>
+            <span class="fillial-link">филиал ул. Гагарина, 14/2;</span>
+            <?php endif; ?>
+            <?php if($item['popova_place']) :  ?>
+            <span class="fillial-link">филиал ул. Попова, 68;</span>
+            <?php endif; ?>
+          </li>
+          <li><strong>Специализации:</strong> <?php echo$item['specialization']; ?></li>
+          <?php if($item['pediatrician'] || $item['adult']) :  ?>
+          <li><strong>Кого принимает:</strong>
+            <?php if($item['pediatrician']) :  ?>дети,</span><?php endif; ?>
+            <?php if($item['adult']) :  ?>взрослые пациенты</span><?php endif; ?>
+          </li>
           <?php endif; ?>
-          <li><strong>Кого принимает:</strong> Взрослые и дети</li>
-          <li><strong>Специальность:</strong> Врач акушер-гинеколог. Высшая квалификационная категория</li>
-          <?php if($item['education']) :  ?>
           <li><strong>Образование:</strong> <?php echo$item['education']; ?></li>
-          <?php endif; ?>
         </ul>
       </div>
       <div class="buttons">
-      <a href="#" class="button button--icon"><svg width="13" height="20" viewBox="0 0 13 20"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0.409484 0.470069C0.978302 -0.132209 1.92766 -0.159333 2.52994 0.409484L12.6846 10L2.52994 19.5905C1.92766 20.1593 0.978302 20.1322 0.409484 19.5299C-0.159333 18.9277 -0.132209 17.9783 0.470069 17.4095L8.3154 10L0.470069 2.59052C-0.132209 2.02171 -0.159333 1.07235 0.409484 0.470069Z"
-              fill="black" />
-          </svg>
-          Подробнее</a>
         <a href="#" class="button button--icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
