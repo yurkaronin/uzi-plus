@@ -18,9 +18,8 @@
       <span class="experience">Стаж работы: <?php echo$item['work_experience']; ?></span>
       <?php endif; ?>
       <div class="text">
+      <p class="text__cust"><?php echo$item['position']; ?></p>
         <ul>
-          <!-- должность  -->
-          <li><?php echo$item['position']; ?></li>
           <!-- филиалы  -->
           <li><strong>Где принимает:</strong>
             <?php if($item['gagarina_place']) :  ?>

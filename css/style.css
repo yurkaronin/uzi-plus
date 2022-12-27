@@ -3623,3 +3623,26 @@ table thead th {
   border: 1px solid #000000;
   font-size: 14px;
 }
+
+.text__cust {
+  font-weight: 600;
+}
+
+.insurance-companies__list--mod {
+  grid-template-columns: 1fr;
+  border-bottom: 1px solid var(--gray3);
+}
+
+.insurance-companies__item--mod {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.insurance-companies__item--mod img {
+  display: block;
+  margin-right: 32px;
+}
+.insurance-companies__item--mod p {
+  font-weight: 600;
+  color: #000000;
+}

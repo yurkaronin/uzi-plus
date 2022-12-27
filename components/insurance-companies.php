@@ -2,6 +2,17 @@
   <div class="wrapper">
     <h2 class="title">Страховые компании</h2>
     <p class="subtitle">Медицинский центр «УЗИ+» сотрудничает со следующими страховыми компаниями:</p>
+    <h3 class="group-title">Программы ОМС</h3>
+    <ul class="insurance-companies__list insurance-companies__list--mod">
+
+      <li class="insurance-companies__item insurance-companies__item--mod">
+        <img src="./img/life-insurance/8.png" alt="лого" width="304">
+        <p>В рамках ОМС от АО "Страховая компания "СОГАЗ-МЕД" <br>
+        Медицинский центр «УЗИ+» предоставляет скидку 10% на все виды узи.
+        </p>
+      </li>
+</ul>
+
 
     <h3 class="group-title">Программы ДМС</h3>
     <ul class="insurance-companies__list">
