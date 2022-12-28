@@ -181,3 +181,13 @@ table {
     color: #000000;
   }
 }
+
+.hide {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}
+
+

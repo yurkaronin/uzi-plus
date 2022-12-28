@@ -11,11 +11,11 @@ $seo_text;
 include "./templates/_head.php";
 include "./templates/_header.php";
 
-$sql_two = "SELECT * FROM `service` WHERE service_category  > 23  LIMIT 6"; 
+$sql_two = "SELECT * FROM `service` WHERE service_category  > 23 LIMIT 6"; 
 $result_two = $data_base->query($sql_two);
 $service_two = $result_two->fetchAll(PDO::FETCH_ASSOC);
 
-$sql_three = "SELECT * FROM `doctors` WHERE children = 1  LIMIT 6";
+$sql_three = "SELECT * FROM `doctors` WHERE pediatrician = 1  LIMIT 6";
 $result_three = $data_base->query($sql_three);
 $doctors = $result_three->fetchAll(PDO::FETCH_ASSOC);
 

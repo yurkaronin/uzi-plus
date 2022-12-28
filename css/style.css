@@ -301,6 +301,20 @@ input[type=radio].visually-hidden {
     width: 18px;
   }
 }
+.button--arrow-right {
+  position: relative;
+  padding-left: 32px;
+}
+.button--arrow-right::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 22px;
+  background-image: url(../img/icons/arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 12px;
+}
 
 .ripple {
   position: relative;
@@ -2321,7 +2335,7 @@ ul:not([class]) li a {
 .leading-specialists .grid {
   display: grid;
   gap: 115px;
-  grid-template-columns: 447px 1fr;
+  grid-template-columns: 360px 1fr;
   background-color: var(--White);
   align-items: flex-start;
 }
@@ -3645,4 +3659,11 @@ table thead th {
 .insurance-companies__item--mod p {
   font-weight: 600;
   color: #000000;
+}
+
+.hide {
+  display: none;
+}
+.hide.show {
+  display: block;
 }

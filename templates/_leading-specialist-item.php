@@ -1,14 +1,12 @@
 <div class="swiper-slide">
-  <div class="grid">
+<div class="leading-specialists__item grid">
     <div class="left">
       <div class="photo">
-
         <?php if($item['photo']) :  ?>
         <img src="<?php echo$item['photo']; ?>" alt="<?php echo$item['name']; ?>" width="448">
         <?php else:  ?>
         <img src="./img/people/temporary-photo.jpg" alt="<?php echo$item['name']; ?>" width="448">
         <?php endif; ?>
-
       </div>
       <span class="name"><?php echo$item['name']; ?></span>
     </div>
@@ -18,29 +16,28 @@
       <span class="experience">Стаж работы: <?php echo$item['work_experience']; ?></span>
       <?php endif; ?>
       <div class="text">
-      <p class="text__cust"><?php echo$item['position']; ?></p>
+        <p class="text__cust"><?php echo$item['position']; ?></p>
         <ul>
-          <!-- филиалы  -->
           <li><strong>Где принимает:</strong>
             <?php if($item['gagarina_place']) :  ?>
-            <span class="fillial-link">филиал ул. Гагарина, 14/2;</span>
+            <span class="fillial-link">пр-т Гагарина, д.14/2;</span>
             <?php endif; ?>
             <?php if($item['popova_place']) :  ?>
-            <span class="fillial-link">филиал ул. Попова, 68;</span>
+            <span class="fillial-link">ул. Попова, 68;</span>
             <?php endif; ?>
           </li>
-          <!-- специализации -->
-          <li><strong>Специализации:</strong> <?php echo$item['specialization']; ?></li>
+          <li class="hide"><strong>Специализации:</strong> <?php echo$item['specialization']; ?></li>
           <?php if($item['pediatrician'] || $item['adult']) :  ?>
           <li><strong>Кого принимает:</strong>
-            <?php if($item['pediatrician']) :  ?>дети,</span><?php endif; ?>
-            <?php if($item['adult']) :  ?>взрослые пациенты</span><?php endif; ?>
+            <?php if($item['pediatrician']) : ?>дети,</span><?php endif; ?>
+            <?php if($item['adult']) :  ?>взрослые</span><?php endif; ?>
           </li>
           <?php endif; ?>
+          <li class="hide"><strong>Образование:</strong> <?php echo$item['education']; ?></li>
         </ul>
       </div>
       <div class="buttons">
-
+        <button class="button button--arrow-right show-more" type="button">Подробнее</button>
         <a href="#" class="button button--icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
