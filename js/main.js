@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   includeFiles("./js/parts/show-mob-menu.js");
   includeFiles("./js/parts/nav-link-modify.js");
   includeFiles("./js/parts/custom-select.js");
-  includeFiles("./js/parts/menu-sticky.js");
   includeFiles("./js/parts/up-scroll-btn.js");
 
 

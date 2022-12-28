@@ -1,5 +1,5 @@
 <?php 
-  $sql = "SELECT * FROM `doctors` WHERE id IN (2, 3, 5, 6, 7, 8)";
+  $sql = "SELECT * FROM `doctors` WHERE id IN (15, 6, 36, 53, 14, 17, 43, 1, 3, 26)";
   $result = $data_base->query($sql);
   $doctors = $result->fetchAll(PDO::FETCH_ASSOC);
 ?>

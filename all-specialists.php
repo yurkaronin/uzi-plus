@@ -1,11 +1,6 @@
 <?php
 require_once('config.php');
 
-
-  $sql = "SELECT * FROM `doctors`";
-  $result = $data_base->query($sql);
-  $doctors = $result->fetchAll(PDO::FETCH_ASSOC);
-
 // переменные 
 $page_name = "";
 $page_desc = "";
@@ -23,10 +18,10 @@ include "./templates/_header.php";
       </ul>
       <br>
       <h1 class="title">Все специалисты</h1>
-      <p class="all-specialists__lead">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged.</p>
+      <p class="all-specialists__lead">Прием ведут 49 профильных специалистов. Без очередей, по предварительной
+        записи.<br>
+        Широкий спектр диагностических услуг, процедурный кабинет. Медицинские справки. Дневной стационар. Работаем:
+        пн-пт 9-19, сб 9-15</p>
 
       <!-- <div class="filter">
         <div class="filter__grid">
@@ -130,92 +125,400 @@ include "./templates/_header.php";
         </div>
       </div> -->
 
-      <div class="service-preview">
-        <ul class="service-preview__list">
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/allergologiya-immunologiya.svg" alt="">
-              </div>
-              <p class="service-preview__text">Аллергология-иммунология</p>
-            </a>
-          </li>
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/gastroenterologiya.svg" alt="">
-              </div>
-              <p class="service-preview__text">Гастроэнтерология</p>
-            </a>
-          </li>
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/kardiologiya.svg" alt="">
-              </div>
-              <p class="service-preview__text">Кардиология</p>
-            </a>
-          </li>
-
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/otorinolaringologiya.svg" alt="">
-              </div>
-              <p class="service-preview__text">Оториноларингология (ЛОР)</p>
-            </a>
-          </li>
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/ortopediya.svg" alt="">
-              </div>
-              <p class="service-preview__text">Ортопедия</p>
-            </a>
-          </li>
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/pediatriya.svg" alt="">
-              </div>
-              <p class="service-preview__text">Педиатрия</p>
-            </a>
-          </li>
-
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/pulmonologiya.svg" alt="">
-              </div>
-              <p class="service-preview__text">Пульмонология</p>
-            </a>
-          </li>
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/ultrazvukovaya-diagnostika.svg" alt="">
-              </div>
-              <p class="service-preview__text">Ультразвуковая диагностика</p>
-            </a>
-          </li>
-          <li class="service-preview__item">
-            <a href="#" class="service-preview__link">
-              <div class="service-preview__icon">
-                <img src="./img/services/funkcionalnaya-diagnostika.svg" alt="">
-              </div>
-              <p class="service-preview__text">Функциональная диагностика</p>
-            </a>
-          </li>
-
-        </ul>
-      </div>
 
       <div class="all-specialists__grid">
-      <?php  
-        foreach( $doctors as $item) {
-        include "./templates/_leading-specialists-card.php"; 
-      };
-      ?>
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=5
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Акушерство-гинекология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=6
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Аллергология-иммунология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=7
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Гастроскопия - ВЭГДС</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=8
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Гастроэнтерология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=9
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Кардиология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=10
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Неврология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=11
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Онкология-маммология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=12
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Оториноларингология(ЛОР)</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=13
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Психиатрия-наркология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=14
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Пульмонология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=15
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Ревматология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=16
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Сосудистая хирургия</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=17
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Терапия</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=18
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Травматология-ортопедия</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=19
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Ультразвуковая диагностика(УЗИ)</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=20
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Урология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=21
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Функциональная диагностика</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=22
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Хирургия</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=23
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Эндокринология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=24
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Детская аллергология-иммунология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=25
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Детская гастроэнтерология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=26
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Детская кардиология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=27
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Детская оториноларингология(ЛОР)</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=28
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Детская ортопедия</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=29
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Педиатрия</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=30
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Детская пульмонология</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=31
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Детская ультразвуковая диагностика (УЗИ)</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
+        <?php 
+          $sql = "SELECT * FROM doctors JOIN doctors_category JOIN service_category
+          ON doctors.id=doctors_category.id_doctor AND doctors_category.Id_category=service_category.id
+          WHERE doctors_category.id_category=32
+          ORDER BY doctors.name ASC;";
+          $result = $data_base->query($sql);
+          $doctors = $result->fetchAll(PDO::FETCH_ASSOC); ?>
+        <h2 class="title">Детская Функциональная диагностика</h2>
+        <?php 
+          foreach( $doctors as $item) {
+            include "./templates/_leading-specialists-card.php"; 
+          };
+        ?>
+
       </div>
 
     </div>

@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="promo__flex">
       <p class="title">Нужна консультация?</p>
-      <p class="text">Оставьте свои контактные данные и мы свяжемся с вами в течении рабочего дня</p>
+      <p class="text">Оставьте свои контактные данные и мы свяжемся с вами в течение одного рабочего дня.</p>
       <a href="#" class="button button--icon">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

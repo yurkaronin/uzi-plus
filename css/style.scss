@@ -29,6 +29,9 @@
     transform: scale(1);
   }
 }
+main {
+  overflow: hidden;
+}
 
 .mob-menu-open {
   overflow: hidden;
